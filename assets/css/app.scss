@@ -1,0 +1,110 @@
+// Colores
+$white: #FFFFFF;
+$dred: #A10B23;
+$lred: #EA4F5C;
+$turquesa: #52FFBD;
+
+// Fonts
+@font-face {
+    font-family: 'scs-bold';
+    src: url(../fonts/scs-bold.otf);
+}
+@font-face {
+    font-family: 'scs-elight';
+    src: url(../fonts/scs-elight.otf);
+}
+@font-face {
+    font-family: 'scs-italic';
+    src: url(../fonts/scs-italic.otf);
+}
+@font-face {
+    font-family: 'scs-regular';
+    src: url(../fonts/scs-regular.otf);
+}
+
+$scs-bold: 'scs-bold', Arial, Helvetica, sans-serif;
+$scs-elight: 'scs-elight', Arial, Helvetica, sans-serif;
+$scs-italic: 'scs-italic', Arial, Helvetica, sans-serif;
+$scs-regular: 'scs-regular', Arial, Helvetica, sans-serif;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $scs-regular;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+.col {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 840px;
+    background: $lred;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, $dred, $lred);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, $dred, $lred); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    .logos {
+        text-align: center;
+        display: flex;
+        justify-content: end;
+        padding: 30px 0;
+        background: transparent;
+        img {
+            width: 180px;
+            &:first-child {
+                margin-right: auto;
+            }
+        }
+    }
+    .bajada {
+        text-align: center;
+        margin-top: 200px;
+        h1 {
+            color: $white;
+            font-family: $scs-bold;
+            font-size: 117px;
+        }
+        p {
+            color: $turquesa;
+            font-family: $scs-regular;
+            font-size: 44px;
+            line-height: 62px;
+            margin: 40px 0;
+        }
+        #scrollDown {
+            width: 60px;
+            margin: 0 auto;
+            display: block;
+            margin-top: 50px;
+            border: 1px solid red;
+            cursor: pointer !important;
+            svg {
+                width: 60px;
+                .st0 {
+                    fill: $white;
+                }
+            }
+        }
+    }
+    .particles-js-canvas-el {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        pointer-events: none;
+    }
+}
+
