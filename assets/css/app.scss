@@ -1,32 +1,17 @@
+// Imports
+@import './fonts.scss';
+@import './animations.scss';
+
 // Colores
 $white: #FFFFFF;
-$dred: #A10B23;
-$lred: #EA4F5C;
-$turquesa: #52FFBD;
+$black: #1a1a1a;
+$pc: #A10B23;
+$sc: #EA4F5C;
+$tc: #52FFBD;
 
-// Fonts
-@font-face {
-    font-family: 'scs-bold';
-    src: url(../fonts/scs-bold.otf);
-}
-@font-face {
-    font-family: 'scs-elight';
-    src: url(../fonts/scs-elight.otf);
-}
-@font-face {
-    font-family: 'scs-italic';
-    src: url(../fonts/scs-italic.otf);
-}
-@font-face {
-    font-family: 'scs-regular';
-    src: url(../fonts/scs-regular.otf);
-}
-
-$scs-bold: 'scs-bold', Arial, Helvetica, sans-serif;
-$scs-elight: 'scs-elight', Arial, Helvetica, sans-serif;
-$scs-italic: 'scs-italic', Arial, Helvetica, sans-serif;
-$scs-regular: 'scs-regular', Arial, Helvetica, sans-serif;
-
+$s2: all .2s;
+$shadow: 0px 20px 30px 0px transparentize($black, .8);
+$shadowHover: 0px 10px 10px 0px transparentize($black, .6);
 
 * {
     margin: 0;
@@ -52,10 +37,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 header {
     width: 100%;
-    height: 840px;
-    background: $lred;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, $dred, $lred);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, $dred, $lred); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100vh;
+    background: $sc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, $pc, $sc);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, $pc, $sc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
     .logos {
         text-align: center;
@@ -72,30 +57,95 @@ header {
     }
     .bajada {
         text-align: center;
-        margin-top: 200px;
+        margin-top: 50px;
         h1 {
             color: $white;
             font-family: $scs-bold;
-            font-size: 117px;
+            font-size: 76px;
         }
         p {
-            color: $turquesa;
+            color: $white;
             font-family: $scs-regular;
-            font-size: 44px;
-            line-height: 62px;
-            margin: 40px 0;
+            font-size: 28px;
+            line-height: 36px;
+            margin-top: 20px;
         }
-        #scrollDown {
-            width: 60px;
-            margin: 0 auto;
-            display: block;
-            margin-top: 50px;
-            border: 1px solid red;
-            cursor: pointer !important;
-            svg {
-                width: 60px;
-                .st0 {
-                    fill: $white;
+
+    }
+    .accesos {
+        margin: 100px 0px;
+        &Productor {
+            width: 300px;
+            background: $white;
+            border-radius: 10px;
+            box-shadow: $shadow;
+            transition: $s2;
+            cursor: pointer;
+
+            #svgProductores {
+                position: relative;
+                &, .TEXTO, .LINEA, .MISC_x5F_1, .MISC_x5F_2, .MISC_x5F_3, .MISC_x5F_4, .MISC_x5F_5, .MISC_x5F_6, .BOCA {
+                    path {
+                        transition: all .1s;
+                    }
+                }
+                .st0{enable-background:new;}
+                .st1{fill:$pc;}
+                .st2{fill:$black;}
+                .st3{fill:none;stroke:$pc;stroke-width:2.13;stroke-miterlimit:10;}
+                .st4{fill:none;stroke:$tc;stroke-miterlimit:10;}
+                .st5{fill:none;stroke:$pc;stroke-width:2.13;stroke-linecap:round;stroke-linejoin:round;}
+                .st6{fill:none;stroke:$black;stroke-linecap:round;stroke-linejoin:round;}
+                .st7{fill:none;stroke:$tc;stroke-width:2.83;stroke-linecap:round;stroke-linejoin:round;}
+                .st8{fill:$pc;}
+            }
+            &:hover {
+                box-shadow: $shadowHover;
+                svg {
+                    .TEXTO {
+                        path {
+                            fill: $sc;
+                        }
+                    }
+                }
+            }
+        }
+
+        &Cliente {
+            width: 300px;
+            background: $white;
+            border-radius: 10px;
+            box-shadow: $shadow;
+            transition: $s2;
+            cursor: pointer;
+            margin-left: 50px;
+
+            #svgClientes {
+                position: relative;
+                &, .TEXTO, .LINEA, .MISC_x5F_1, .MISC_x5F_2, .MISC_x5F_3, .MISC_x5F_4, .MISC_x5F_5, .MISC_x5F_6, .BOCA {
+                    path {
+                        transition: all .1s;
+                    }
+                }
+                .st0{enable-background:new    ;}
+                .st1{fill:$pc;}
+                .st2{fill:none;}
+                .st3{fill:$black;}
+                .st4{fill:none;stroke:$black;stroke-width:2.13;stroke-miterlimit:10;}
+                .st5{fill:none;stroke:$pc;stroke-miterlimit:10;}
+                .st6{fill:none;stroke:$tc;stroke-width:2.13;stroke-linecap:round;stroke-linejoin:round;}
+                .st7{fill:none;stroke:$black;stroke-linecap:round;stroke-linejoin:round;}
+                .st8{fill:none;stroke:$pc;stroke-width:2.83;stroke-linecap:round;stroke-linejoin:round;}
+                .st9{fill:$tc;}
+            }
+            &:hover {
+                box-shadow: $shadowHover;
+                svg {
+                    .TEXTO {
+                        path {
+                            fill: $sc;
+                        }
+                    }
                 }
             }
         }
@@ -107,4 +157,3 @@ header {
         pointer-events: none;
     }
 }
-

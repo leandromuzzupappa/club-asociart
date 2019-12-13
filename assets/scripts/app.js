@@ -117,9 +117,56 @@ particlesJS('particles-js', {
         "retina_detect": true
 });
 
-// ScrollDown
-const scrollDown = document.getElementById('scrollDown')
-const main = document.getElementsByTagName('main')[0];
-scrollDown.addEventListener('click', () => {
-    main.scrollIntoView({behavior:'smooth'});
-})
+const getBocaProductor = document.querySelector('#svgProductores > .BOCA > path');
+const getBocaCliente = document.querySelector('#svgClientes > .BOCA > path');
+
+const icProductorBocaCerrada = getBocaProductor.getAttribute('d');
+const icProductorBocaAbierta = 'M80.3,85.7c2.8,0,5.2-1.4,5.8-3.5c0.1-0.4,0-0.8-0.2-1.1c-0.3-0.4-0.9-0.7-1.4-0.6h-8.3c-0.5,0-1.1,0.2-1.4,0.6c-0.2,0.3-0.3,0.7-0.2,1.1C75.1,84.2,77.5,85.7,80.3,85.7z M84.4,82c-0.5,1.2-2.2,2-4.1,2s-3.6-0.9-4.1-2H84.4z';
+
+const icClienteBocaCerrada = getBocaCliente.getAttribute('d');
+const icClienteBocaAbierta = 'M81.3,82.4C81,82.7,81,83.1,81,83.5c0.6,2,2.9,3.5,5.6,3.5s5.1-1.4,5.6-3.5c0.1-0.4,0-0.8-0.2-1.1c-0.3-0.4-0.8-0.6-1.4-0.6h-8.1C82.1,81.8,81.6,82,81.3,82.4z M90.7,83.4c-0.5,1.2-2.2,2-4,2s-3.5-0.8-4-2H90.7z';
+
+const accesoProductor = document.querySelector('.accesosProductor');
+const accesoCliente = document.querySelector('.accesosCliente');
+
+accesoProductor.addEventListener('mouseenter', () => {
+    getBocaProductor.setAttribute('d', icProductorBocaAbierta);
+
+    gsap.to( $('#svgProductores > .LINEA'), {duration: 1, scaleX: 1.1, transformOrigin: "center center"} );
+    gsap.to( $('#svgProductores > .MISC_x5F_1'), {duration: .5, scaleX: 1.3, transformOrigin: "46,4px 120,35px"} );
+    gsap.to( $('#svgProductores > .MISC_x5F_2'), {duration: 1, scale: 1.2, rotation: 360, transformOrigin: "center center"} );
+    gsap.to( $('#svgProductores > .MISC_x5F_3'), {duration: 1, scale: 2, transformOrigin: "center center"} );
+    gsap.to( $('#svgProductores > .MISC_x5F_4'), {duration: 2, rotation: 360, transformOrigin: "center center"} );
+    gsap.to( $('#svgProductores > .MISC_x5F_6'), {duration: 1, scale: 3, transformOrigin: "center center"} );
+    gsap.to( $('#svgProductores > .MISC_x5F_5'), {duration: 2, scale: 3, rotation: 360, translateX: 20, transformOrigin: "center center"} );
+
+
+});
+accesoProductor.addEventListener('mouseleave', () => {
+    getBocaProductor.setAttribute('d', icProductorBocaCerrada);
+
+    gsap.to( $('#svgProductores > .LINEA'), {duration: 1, scaleX: 1, transformOrigin: "center center"} );
+    gsap.to( $('#svgProductores > .MISC_x5F_1'), {duration: 1, scaleX: 1, transformOrigin: "46,4px 120,35px"} );
+    gsap.to( $('#svgProductores > .MISC_x5F_2'), {duration: 1, scale: 1, rotation: 0,ransformOrigin: "center center"} );
+    gsap.to( $('#svgProductores > .MISC_x5F_3'), {duration: 1, scale: 1, transformOrigin: "center center"} );
+    gsap.to( $('#svgProductores > .MISC_x5F_4'), {duration: 1, rotation: 0, transformOrigin: "center center"} );
+    gsap.to( $('#svgProductores > .MISC_x5F_6'), {duration: 1, scale: 1, transformOrigin: "center center"} );
+    gsap.to( $('#svgProductores > .MISC_x5F_5'), {duration: 1, scale: 1, rotation: 0, translateX: 0, transformOrigin: "center center"} );
+
+
+});
+
+accesoCliente.addEventListener('mouseenter', () => {
+    getBocaCliente.setAttribute('d', icClienteBocaAbierta);
+
+    gsap.to( $('.LINEAS'), { duration: 1, scaleX: 1.2, transformOrigin: 'center center' } )
+
+
+});
+accesoCliente.addEventListener('mouseleave', () => {
+    getBocaCliente.setAttribute('d', icClienteBocaCerrada);
+
+    gsap.to( $('.LINEAS'), { duration: 1, scaleX: 1, transformOrigin: 'center center' } )
+
+
+});

@@ -1,0 +1,22 @@
+// Fonts
+@font-face {
+    font-family: 'scs-bold';
+    src: url(../fonts/scs-bold.otf);
+}
+@font-face {
+    font-family: 'scs-elight';
+    src: url(../fonts/scs-elight.otf);
+}
+@font-face {
+    font-family: 'scs-italic';
+    src: url(../fonts/scs-italic.otf);
+}
+@font-face {
+    font-family: 'scs-regular';
+    src: url(../fonts/scs-regular.otf);
+}
+
+$scs-bold: 'scs-bold', Arial, Helvetica, sans-serif;
+$scs-elight: 'scs-elight', Arial, Helvetica, sans-serif;
+$scs-italic: 'scs-italic', Arial, Helvetica, sans-serif;
+$scs-regular: 'scs-regular', Arial, Helvetica, sans-serif;

@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 header {
   width: 100%;
-  height: 840px;
+  min-height: 100vh;
   background: #EA4F5C;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #A10B23, #EA4F5C);
@@ -71,38 +71,184 @@ header .logos img:first-child {
 
 header .bajada {
   text-align: center;
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 header .bajada h1 {
   color: #FFFFFF;
   font-family: "scs-bold", Arial, Helvetica, sans-serif;
-  font-size: 117px;
+  font-size: 76px;
 }
 
 header .bajada p {
-  color: #52FFBD;
+  color: #FFFFFF;
   font-family: "scs-regular", Arial, Helvetica, sans-serif;
-  font-size: 44px;
-  line-height: 62px;
-  margin: 40px 0;
+  font-size: 28px;
+  line-height: 36px;
+  margin-top: 20px;
 }
 
-header .bajada #scrollDown {
-  width: 60px;
-  margin: 0 auto;
-  display: block;
-  margin-top: 50px;
-  border: 1px solid red;
-  cursor: pointer !important;
+header .accesos {
+  margin: 100px 0px;
 }
 
-header .bajada #scrollDown svg {
-  width: 60px;
+header .accesosProductor {
+  width: 300px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 20px 30px 0px rgba(26, 26, 26, 0.2);
+  transition: all 0.2s;
+  cursor: pointer;
 }
 
-header .bajada #scrollDown svg .st0 {
-  fill: #FFFFFF;
+header .accesosProductor #svgProductores {
+  position: relative;
+}
+
+header .accesosProductor #svgProductores path, header .accesosProductor #svgProductores .TEXTO path, header .accesosProductor #svgProductores .LINEA path, header .accesosProductor #svgProductores .MISC_x5F_1 path, header .accesosProductor #svgProductores .MISC_x5F_2 path, header .accesosProductor #svgProductores .MISC_x5F_3 path, header .accesosProductor #svgProductores .MISC_x5F_4 path, header .accesosProductor #svgProductores .MISC_x5F_5 path, header .accesosProductor #svgProductores .MISC_x5F_6 path, header .accesosProductor #svgProductores .BOCA path {
+  transition: all .1s;
+}
+
+header .accesosProductor #svgProductores .st0 {
+  enable-background: new;
+}
+
+header .accesosProductor #svgProductores .st1 {
+  fill: #A10B23;
+}
+
+header .accesosProductor #svgProductores .st2 {
+  fill: #1a1a1a;
+}
+
+header .accesosProductor #svgProductores .st3 {
+  fill: none;
+  stroke: #A10B23;
+  stroke-width: 2.13;
+  stroke-miterlimit: 10;
+}
+
+header .accesosProductor #svgProductores .st4 {
+  fill: none;
+  stroke: #52FFBD;
+  stroke-miterlimit: 10;
+}
+
+header .accesosProductor #svgProductores .st5 {
+  fill: none;
+  stroke: #A10B23;
+  stroke-width: 2.13;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+header .accesosProductor #svgProductores .st6 {
+  fill: none;
+  stroke: #1a1a1a;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+header .accesosProductor #svgProductores .st7 {
+  fill: none;
+  stroke: #52FFBD;
+  stroke-width: 2.83;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+header .accesosProductor #svgProductores .st8 {
+  fill: #A10B23;
+}
+
+header .accesosProductor:hover {
+  box-shadow: 0px 10px 10px 0px rgba(26, 26, 26, 0.4);
+}
+
+header .accesosProductor:hover svg .TEXTO path {
+  fill: #EA4F5C;
+}
+
+header .accesosCliente {
+  width: 300px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 20px 30px 0px rgba(26, 26, 26, 0.2);
+  transition: all 0.2s;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+header .accesosCliente #svgClientes {
+  position: relative;
+}
+
+header .accesosCliente #svgClientes path, header .accesosCliente #svgClientes .TEXTO path, header .accesosCliente #svgClientes .LINEA path, header .accesosCliente #svgClientes .MISC_x5F_1 path, header .accesosCliente #svgClientes .MISC_x5F_2 path, header .accesosCliente #svgClientes .MISC_x5F_3 path, header .accesosCliente #svgClientes .MISC_x5F_4 path, header .accesosCliente #svgClientes .MISC_x5F_5 path, header .accesosCliente #svgClientes .MISC_x5F_6 path, header .accesosCliente #svgClientes .BOCA path {
+  transition: all .1s;
+}
+
+header .accesosCliente #svgClientes .st0 {
+  enable-background: new;
+}
+
+header .accesosCliente #svgClientes .st1 {
+  fill: #A10B23;
+}
+
+header .accesosCliente #svgClientes .st2 {
+  fill: none;
+}
+
+header .accesosCliente #svgClientes .st3 {
+  fill: #1a1a1a;
+}
+
+header .accesosCliente #svgClientes .st4 {
+  fill: none;
+  stroke: #1a1a1a;
+  stroke-width: 2.13;
+  stroke-miterlimit: 10;
+}
+
+header .accesosCliente #svgClientes .st5 {
+  fill: none;
+  stroke: #A10B23;
+  stroke-miterlimit: 10;
+}
+
+header .accesosCliente #svgClientes .st6 {
+  fill: none;
+  stroke: #52FFBD;
+  stroke-width: 2.13;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+header .accesosCliente #svgClientes .st7 {
+  fill: none;
+  stroke: #1a1a1a;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+header .accesosCliente #svgClientes .st8 {
+  fill: none;
+  stroke: #A10B23;
+  stroke-width: 2.83;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+header .accesosCliente #svgClientes .st9 {
+  fill: #52FFBD;
+}
+
+header .accesosCliente:hover {
+  box-shadow: 0px 10px 10px 0px rgba(26, 26, 26, 0.4);
+}
+
+header .accesosCliente:hover svg .TEXTO path {
+  fill: #EA4F5C;
 }
 
 header .particles-js-canvas-el {
