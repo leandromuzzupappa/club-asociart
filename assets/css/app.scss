@@ -135,129 +135,398 @@ h1, h2, h3, h4, h5, h6, p {
     z-index: 65;
     display: none;
 }
-
-header {
+#menuMobile {
+    position: absolute;
     width: 100%;
-    min-height: 100vh;
-    background: $sc;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, $pc, $sc);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, $pc, $sc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    height: 100%;
+    top: -100%; left: 0;
+    background: $pc;
+    z-index: 123;
+    text-align: center;
+    display: none;
+    transition: all .5s;
     .logos {
-        text-align: center;
+        padding: 30px;
+        text-align: left;
         display: flex;
         justify-content: end;
-        padding: 30px 0;
-        background: transparent;
-        z-index: 61;
         img {
-            width: 180px;
-            &:first-child {
-                margin-right: auto;
-            }
+            width: 200px;
+            margin: 0 auto;
         }
     }
-    .bajada {
-        text-align: center;
-        margin-top: 50px;
-        h1 {
+    .item {
+        a {
+            display: block;
+            padding: 10px 0px;
+            margin: 20px 0px;
             color: $white;
+            font-family: $scs-elight;
+            font-size: 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            position: relative;
+            .bottomLine {
+                position: absolute;
+                bottom: 0px; left: 50%;
+                transform: translateX(-50%);
+                display: block;
+                width: 120px;
+                height: 2px;
+                border-radius: 1px;
+                background: $white;
+                transition: $s2;
+            }
+            &:hover {
+                .bottomLine {
+                    width: 180px;
+                }
+            }
+        }
+        .active {
             font-family: $scs-bold;
-            font-size: 76px;
-        }
-        p {
-            color: $white;
-            font-family: $scs-regular;
-            font-size: 28px;
-            line-height: 36px;
-            margin-top: 20px;
-        }
-
-    }
-    .accesos {
-        margin: 100px 0px;
-        &Productor {
-            width: 300px;
-            background: $white;
-            border-radius: 10px;
-            box-shadow: $shadow;
-            transition: $s2;
-            cursor: pointer;
-
-            #svgProductores {
-                position: relative;
-                &, .TEXTO, .LINEA, .MISC_x5F_1, .MISC_x5F_2, .MISC_x5F_3, .MISC_x5F_4, .MISC_x5F_5, .MISC_x5F_6, .BOCA {
-                    path {
-                        transition: all .1s;
-                    }
-                }
-                .st0{enable-background:new;}
-                .st1{fill:$pc;}
-                .st2{fill:$black;}
-                .st3{fill:none;stroke:$pc;stroke-width:2.13;stroke-miterlimit:10;}
-                .st4{fill:none;stroke:$tc;stroke-miterlimit:10;}
-                .st5{fill:none;stroke:$pc;stroke-width:2.13;stroke-linecap:round;stroke-linejoin:round;}
-                .st6{fill:none;stroke:$black;stroke-linecap:round;stroke-linejoin:round;}
-                .st7{fill:none;stroke:$tc;stroke-width:2.83;stroke-linecap:round;stroke-linejoin:round;}
-                .st8{fill:$pc;}
-            }
-            &:hover {
-                box-shadow: $shadowHover;
-                svg {
-                    .TEXTO {
-                        path {
-                            fill: $sc;
-                        }
-                    }
-                }
-            }
-        }
-
-        &Cliente {
-            width: 300px;
-            background: $white;
-            border-radius: 10px;
-            box-shadow: $shadow;
-            transition: $s2;
-            cursor: pointer;
-            margin-left: 50px;
-
-            #svgClientes {
-                position: relative;
-                &, .TEXTO, .LINEA, .MISC_x5F_1, .MISC_x5F_2, .MISC_x5F_3, .MISC_x5F_4, .MISC_x5F_5, .MISC_x5F_6, .BOCA {
-                    path {
-                        transition: all .1s;
-                    }
-                }
-                .st0{enable-background:new    ;}
-                .st1{fill:$pc;}
-                .st2{fill:none;}
-                .st3{fill:$black;}
-                .st4{fill:none;stroke:$black;stroke-width:2.13;stroke-miterlimit:10;}
-                .st5{fill:none;stroke:$pc;stroke-miterlimit:10;}
-                .st6{fill:none;stroke:$tc;stroke-width:2.13;stroke-linecap:round;stroke-linejoin:round;}
-                .st7{fill:none;stroke:$black;stroke-linecap:round;stroke-linejoin:round;}
-                .st8{fill:none;stroke:$pc;stroke-width:2.83;stroke-linecap:round;stroke-linejoin:round;}
-                .st9{fill:$tc;}
-            }
-            &:hover {
-                box-shadow: $shadowHover;
-                svg {
-                    .TEXTO {
-                        path {
-                            fill: $sc;
-                        }
-                    }
-                }
-            }
         }
     }
-    .particles-js-canvas-el {
+}
+.menuMobileActive {
+    display: block !important;
+}
+#menuMobileBoton {
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 50px; right: 50px;
+    background: $pc;
+    box-shadow: $shadow;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 124;
+    display: none;
+    span {
+        display: block;
+        width: 60%;
+        height: 3px;
+        background: $white;
+        border-radius: 3px;
         position: absolute;
-        top: 0;
-        z-index: 1;
-        pointer-events: none;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        &:nth-child(1) {
+            top: 30%;
+        }
+        &:nth-child(3) {
+            top: 70%;
+        }
     }
+}
+.menuMobileBotonActive {
+    top: 80% !important; left: 50%;
+    transform: translateX(-50%);
+    span {
+        &:nth-child(1) {
+            top: 50% !important;
+            transform-origin: 11px -21px;
+            transform: rotate(45deg) !important;
+        }
+        &:nth-child(2) {
+            opacity: 0;
+        }
+        &:nth-child(3) {
+            top: 50% !important;
+            transform-origin: 7px 23px;
+            transform: rotate(-45deg) !important;
+        }
+    }
+}
+
+#Login {
+    header {
+        width: 100%;
+        min-height: 100vh;
+        background: $sc;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, $pc, $sc);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, $pc, $sc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        .logos {
+            text-align: center;
+            display: flex;
+            justify-content: end;
+            padding: 30px 0;
+            background: transparent;
+            z-index: 61;
+            img {
+                width: 180px;
+                &:first-child {
+                    margin-right: auto;
+                }
+            }
+        }
+        .bajada {
+            text-align: center;
+            margin-top: 50px;
+            h1 {
+                color: $white;
+                font-family: $scs-bold;
+                font-size: 76px;
+            }
+            p {
+                color: $white;
+                font-family: $scs-regular;
+                font-size: 28px;
+                line-height: 36px;
+                margin-top: 20px;
+            }
+    
+        }
+        .accesos {
+            margin: 100px 0px;
+            &Productor {
+                width: 300px;
+                background: $white;
+                border-radius: 10px;
+                box-shadow: $shadow;
+                transition: $s2;
+                cursor: pointer;
+    
+                #svgProductores {
+                    position: relative;
+                    &, .TEXTO, .LINEA, .MISC_x5F_1, .MISC_x5F_2, .MISC_x5F_3, .MISC_x5F_4, .MISC_x5F_5, .MISC_x5F_6, .BOCA {
+                        path {
+                            transition: all .1s;
+                        }
+                    }
+                    .st0{enable-background:new;}
+                    .st1{fill:$pc;}
+                    .st2{fill:$black;}
+                    .st3{fill:none;stroke:$pc;stroke-width:2.13;stroke-miterlimit:10;}
+                    .st4{fill:none;stroke:$tc;stroke-miterlimit:10;}
+                    .st5{fill:none;stroke:$pc;stroke-width:2.13;stroke-linecap:round;stroke-linejoin:round;}
+                    .st6{fill:none;stroke:$black;stroke-linecap:round;stroke-linejoin:round;}
+                    .st7{fill:none;stroke:$tc;stroke-width:2.83;stroke-linecap:round;stroke-linejoin:round;}
+                    .st8{fill:$pc;}
+                }
+                &:hover {
+                    box-shadow: $shadowHover;
+                    svg {
+                        .TEXTO {
+                            path {
+                                fill: $sc;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            &Cliente {
+                width: 300px;
+                background: $white;
+                border-radius: 10px;
+                box-shadow: $shadow;
+                transition: $s2;
+                cursor: pointer;
+                margin-left: 50px;
+    
+                #svgClientes {
+                    position: relative;
+                    &, .TEXTO, .LINEA, .MISC_x5F_1, .MISC_x5F_2, .MISC_x5F_3, .MISC_x5F_4, .MISC_x5F_5, .MISC_x5F_6, .BOCA {
+                        path {
+                            transition: all .1s;
+                        }
+                    }
+                    .st0{enable-background:new    ;}
+                    .st1{fill:$pc;}
+                    .st2{fill:none;}
+                    .st3{fill:$black;}
+                    .st4{fill:none;stroke:$black;stroke-width:2.13;stroke-miterlimit:10;}
+                    .st5{fill:none;stroke:$pc;stroke-miterlimit:10;}
+                    .st6{fill:none;stroke:$tc;stroke-width:2.13;stroke-linecap:round;stroke-linejoin:round;}
+                    .st7{fill:none;stroke:$black;stroke-linecap:round;stroke-linejoin:round;}
+                    .st8{fill:none;stroke:$pc;stroke-width:2.83;stroke-linecap:round;stroke-linejoin:round;}
+                    .st9{fill:$tc;}
+                }
+                &:hover {
+                    box-shadow: $shadowHover;
+                    svg {
+                        .TEXTO {
+                            path {
+                                fill: $sc;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .particles-js-canvas-el {
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            pointer-events: none;
+        }
+    }
+}
+
+#Bienvenido {
+    header {
+        padding: 50px 0px;
+        background: $pcl;
+        nav {
+            text-align: center;
+            ul {
+                list-style-type: none;
+                li {
+                    display: inline-block;
+                    vertical-align: middle;
+                    a {
+                        padding: 5px;
+                        margin: 0px 10px;
+                        //border: 1px solid white;
+                        position: relative;
+                        text-decoration: none;
+                        font-family: $scs-elight;
+                        color: $white;
+                        font-size: 22px;
+                        overflow: hidden;
+                        svg {
+                            .cls-1 {
+                                fill: none;
+                            }
+
+                            .cls-2 {
+                                clip-path: url(#clip-path);
+                            }
+
+                            .cls-3 {
+                                fill: #fff;
+                                transition: $s2;
+                            }
+                            width: 50px;
+                            position: absolute;
+                            top: 50%; left: 50%;
+                            transform: translate(-50%, -50%); 
+                            
+                        }
+                        .bottomLine {
+                            position: absolute;
+                            bottom: -15px; left: 50%;
+                            transform: translateX(-50%);
+                            display: block;
+                            width: 120px;
+                            height: 2px;
+                            border-radius: 1px;
+                            background: $white;
+                            transition: $s2;
+                        }
+                        &:hover {
+                            svg {
+                                .cls-3 {
+                                    fill: $pc;
+                                }
+                            }
+                            .bottomLine {
+                                width: 180px;
+                            }
+                        }
+                    }
+                    .active {
+                        font-family: $scs-bold;
+                    }
+                    &:first-child {
+                        margin-right: 30px;
+                    }
+                }
+            }
+        }
+        .bajada {
+            margin-top: 50px;
+            h1 {
+                svg {
+                    width: 70%;
+                    .st0{enable-background:new    ;}
+                    .st1{fill:#FFFFFF;}
+                }
+            }
+            p {
+                margin-top: 40px;
+                width: 70%;
+                font-family: $scs-elight;
+                color: $white;
+                font-size: 24px;
+                line-height: 36px;
+            }
+            a {
+                display: block;
+                width: 500px;
+                padding: 10px 0px;
+                background: $lgray;
+                border-radius: 10px;
+                box-shadow: $shadow;
+                transition: $s2;
+                color: $white;
+                font-size: 24px;
+                line-height: 31px;
+                text-align: center;
+                font-family: $scs-bold;
+                text-decoration: none;
+                margin: 0 auto;
+                margin-top: 20px;
+                &:hover {
+                    background: darken($lgray, 10);
+                    box-shadow: $shadowHover;
+                }
+            }
+        }
+    }
+    .features {
+        padding: 50px 0px;
+        .item {
+            vertical-align: top;
+            padding-bottom: 10px;
+            transition: $s2;
+            &:nth-child(1) {
+                width: calc(300px - 30px);
+                margin: 30px;
+                margin-left: 0px;
+            }
+            &:nth-child(2) {
+                width: calc(262px - 60px);
+                margin: 30px;
+            }
+            &:nth-child(3) {
+                width: calc(209px - 60px);
+                margin: 30px;
+            }
+            &:nth-child(4) {
+                width: calc(229px - 30px);
+                margin: 30px;
+                margin-right: 0px;
+            }
+            .icono {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .title {
+                font-family: $scs-bold;
+                font-size: 24px;
+                color: $pcl;
+                margin-bottom: 15px;
+            }
+            p {
+                font-family: $scs-elight;
+                font-size: 15px;
+                color: $lgray;
+                span {
+                    font-family: $scs-italic;
+                    color: darken($lgray, 10);
+                }                
+            }
+            &:hover {
+                border-bottom: 3px solid $pc;
+            }
+        }
+    }
+
+    // End Bienvenido
 }
 
 @media (max-width: 1400px) {
@@ -275,6 +544,35 @@ header {
             margin: 50px 0px;
             &Productor, &Cliente {
                 width: 250px;
+            }
+        }
+    }
+}
+@media (max-width: 1000px) {
+    #menuMobileBoton {
+        display: block;
+    }
+    #Bienvenido {
+        header {
+            nav {
+                display: none;
+            }
+            .bajada {
+                h1 {
+                    svg {
+                        width: 100%;
+                    }
+                }
+                p {
+                    width: 100%;
+                    font-size: 18px;
+                    margin-bottom: 30px;
+                }
+                a {
+                    width: 100%;
+                    font-size: 18px;
+                    margin: 20px 0;
+                }
             }
         }
     }

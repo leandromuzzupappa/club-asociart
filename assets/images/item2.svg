@@ -1,0 +1,124 @@
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" width="179" height="126" viewBox="0 0 179 126">
+  <defs>
+    <style>
+      .cls-1, .cls-11, .cls-6 {
+        fill: #f4f4f4;
+      }
+
+      .cls-2 {
+        fill: #1f1b36;
+      }
+
+      .cls-10, .cls-3, .cls-4, .cls-5, .cls-7 {
+        fill: none;
+      }
+
+      .cls-10, .cls-3 {
+        stroke: #000;
+      }
+
+      .cls-11, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke-width: 2.13px;
+      }
+
+      .cls-4, .cls-5, .cls-7 {
+        stroke: #cd1931;
+      }
+
+      .cls-10, .cls-5, .cls-6, .cls-7 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-5, .cls-6 {
+        stroke-width: 2.13px;
+      }
+
+      .cls-11, .cls-6 {
+        stroke: #52ffbd;
+      }
+
+      .cls-7 {
+        stroke-width: 2.83px;
+      }
+
+      .cls-8 {
+        fill: #52ffbd;
+      }
+
+      .cls-9 {
+        fill: #cd1931;
+      }
+
+      .cls-10, .cls-11 {
+        stroke-width: 3.69px;
+      }
+    </style>
+  </defs>
+  <title>item2</title>
+  <g>
+    <g id="Grupo_279" data-name="Grupo 279">
+      <g id="Sustracción_2" data-name="Sustracción 2">
+        <path id="Trazado_402" data-name="Trazado 402" class="cls-1" d="M132.3,117.89h-107a69.58,69.58,0,1,1,107.05,0Z"/>
+      </g>
+      <g id="Grupo_261" data-name="Grupo 261">
+        <path id="Trazado_481" data-name="Trazado 481" class="cls-2" d="M142.6,124.18h-9.34a.58.58,0,0,1-.6-.57.59.59,0,0,1,.57-.6h9.37a.59.59,0,0,1,.57.6A.58.58,0,0,1,142.6,124.18Z"/>
+      </g>
+      <g id="Grupo_262" data-name="Grupo 262">
+        <path id="Trazado_482" data-name="Trazado 482" d="M124.15,124.18H37.84a.58.58,0,0,1-.57-.6.59.59,0,0,1,.57-.57h86.31a.59.59,0,0,1,0,1.17Z"/>
+      </g>
+      <g id="Grupo_255" data-name="Grupo 255">
+        <g id="Grupo_252" data-name="Grupo 252">
+          <path id="Trazado_473" data-name="Trazado 473" d="M174.25,118.48H156a.62.62,0,0,1,0-1.18h18.28a.54.54,0,0,1,.44.61A.53.53,0,0,1,174.25,118.48Z"/>
+        </g>
+        <g id="Grupo_253" data-name="Grupo 253">
+          <path id="Trazado_474" data-name="Trazado 474" class="cls-2" d="M152.39,118.48H146c-.25,0-.46-.25-.47-.57s.19-.6.44-.61h6.39c.25,0,.46.25.46.58a.54.54,0,0,1-.44.6Z"/>
+        </g>
+        <g id="Grupo_254" data-name="Grupo 254">
+          <path id="Trazado_475" data-name="Trazado 475" class="cls-2" d="M142.21,118.48H4.7c-.23,0-.4-.28-.39-.6s.17-.57.39-.58H142.21c.22,0,.4.28.39.61s-.18.56-.39.57Z"/>
+        </g>
+      </g>
+    </g>
+    <g id="Elipse_28" data-name="Elipse 28">
+      <circle class="cls-3" cx="52.51" cy="38.76" r="1.92"/>
+    </g>
+    <g id="Elipse_27" data-name="Elipse 27">
+      <circle class="cls-4" cx="145.56" cy="83.04" r="1.92"/>
+    </g>
+    <g>
+      <line id="Línea_58" data-name="Línea 58" class="cls-5" x1="106.13" y1="27.97" x2="106.64" y2="28.48"/>
+      <line id="Línea_60" data-name="Línea 60" class="cls-5" x1="98.82" y1="20.66" x2="99.33" y2="21.17"/>
+      <line id="Línea_59" data-name="Línea 59" class="cls-5" x1="106.13" y1="21.17" x2="106.64" y2="20.66"/>
+      <line id="Línea_65" data-name="Línea 65" class="cls-5" x1="98.82" y1="28.48" x2="99.33" y2="27.97"/>
+    </g>
+    <g>
+      <line id="Línea_62" data-name="Línea 62" class="cls-6" x1="30.12" y1="100.55" x2="30.66" y2="100.01"/>
+      <line id="Línea_63" data-name="Línea 63" class="cls-6" x1="30.66" y1="103.42" x2="30.12" y2="102.89"/>
+      <line id="Línea_63-2" data-name="Línea 63" class="cls-6" x1="27.24" y1="103.42" x2="27.78" y2="102.89"/>
+      <line id="Línea_64" data-name="Línea 64" class="cls-6" x1="27.78" y1="100.55" x2="27.24" y2="100.01"/>
+    </g>
+    <g id="Grupo_292" data-name="Grupo 292">
+      <line id="Línea_53" data-name="Línea 53" class="cls-7" x1="6.23" y1="89.14" x2="7.36" y2="88.01"/>
+      <line id="Línea_54" data-name="Línea 54" class="cls-7" x1="12.33" y1="83.04" x2="13.46" y2="81.91"/>
+      <line id="Línea_55" data-name="Línea 55" class="cls-7" x1="13.46" y1="89.14" x2="12.33" y2="88.01"/>
+      <line id="Línea_56" data-name="Línea 56" class="cls-7" x1="7.36" y1="83.04" x2="6.23" y2="81.91"/>
+    </g>
+    <g id="Grupo_291" data-name="Grupo 291">
+      <path id="Trazado_349" data-name="Trazado 349" class="cls-8" d="M146.28,34.29h-17.6a1,1,0,1,1,0-1.9h17.6a1,1,0,0,1,0,1.9Z"/>
+      <path id="Trazado_352" data-name="Trazado 352" class="cls-9" d="M146.6,39.71H134.72a1,1,0,0,1,0-1.9H146.6a1,1,0,0,1,0,1.9Z"/>
+      <path id="Trazado_353" data-name="Trazado 353" class="cls-9" d="M152.42,39.71h-1.53a1,1,0,1,1,0-1.9h1.53a1,1,0,1,1,0,1.9Z"/>
+    </g>
+    <g>
+      <polygon class="cls-10" points="81 46.77 92.41 69.91 117.94 73.61 99.47 91.62 103.83 117.05 81 105.04 58.16 117.05 62.52 91.62 44.05 73.61 69.58 69.91 81 46.77"/>
+      <circle class="cls-11" cx="94.59" cy="67.29" r="12.59"/>
+      <g>
+        <path class="cls-8" d="M94.59,74.72a1,1,0,0,1-1-1V60.87a1,1,0,1,1,2,0V73.71A1,1,0,0,1,94.59,74.72Z"/>
+        <path class="cls-8" d="M101,68.3H88.17a1,1,0,0,1,0-2H101a1,1,0,0,1,0,2Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
