@@ -42,7 +42,7 @@
             <div class="container">
                 <ul>
                     <li>
-                        <a class="" href="#">
+                        <a class="" href="bienvenido.php">
                             <svg id="Capa_1" width="70" height="70" viewBox="0 0 70 70">
                                 <defs>
                                     <clipPath id="clip-path">
@@ -58,19 +58,19 @@
                         </a>
                     </li>
                     <li>
-                        <a class="active" href="#">
+                        <a class="" href="como-canjear-premios.php">
                             ¿Cómo canjear los premios?
                             <div class="bottomLine"></div>
                         </a>
                     </li>
                     <li>
-                        <a class="" href="#">
+                        <a class="" href="como-sumar-puntos.php">
                             ¿Cómo sumar puntos?
                             <div class="bottomLine"></div>
                         </a>
                     </li>
                     <li>
-                        <a class="" href="#">
+                        <a class="" href="bases-y-condiciones.php">
                             Bases y condiciones
                             <div class="bottomLine"></div>
                         </a>

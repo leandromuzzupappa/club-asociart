@@ -2,6 +2,8 @@
 @import './fonts.scss';
 @import './animations.scss';
 
+
+
 // Colores
 $white: #FFFFFF;
 $black: #1a1a1a;
@@ -64,7 +66,7 @@ h1, h2, h3, h4, h5, h6, p {
     display: none;
     h1 {
         font-family: $scs-bold;
-        font-size: 56px;
+        font-size: 36px;
         color: $pcl; 
         margin-bottom: 20px;
         text-transform: uppercase;
@@ -95,7 +97,7 @@ h1, h2, h3, h4, h5, h6, p {
     }
     button {
         font-family: $scs-bold;
-        font-size: 34px;
+        font-size: 18px;
         color: $white;
         background: $pcl;
         padding: 15px 30px;
@@ -239,11 +241,22 @@ h1, h2, h3, h4, h5, h6, p {
         }
     }
 }
+.SeccionTitulos {
+    h2 {
+        font-family: $scs-elight;
+        font-weight: 100;
+        font-size: 48px;
+        color: $pcl;
+        strong {
+            font-family: $scs-bold;
+        }
+    }
+}
 
 #Login {
     header {
         width: 100%;
-        min-height: 100vh;
+        height: 100vh;
         background: $sc;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to bottom, $pc, $sc);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to bottom, $pc, $sc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -280,7 +293,7 @@ h1, h2, h3, h4, h5, h6, p {
     
         }
         .accesos {
-            margin: 100px 0px;
+            margin-top: 100px;
             &Productor {
                 width: 300px;
                 background: $white;
@@ -441,7 +454,7 @@ h1, h2, h3, h4, h5, h6, p {
             margin-top: 50px;
             h1 {
                 svg {
-                    width: 70%;
+                    width: 50%;
                     .st0{enable-background:new    ;}
                     .st1{fill:#FFFFFF;}
                 }
@@ -451,7 +464,7 @@ h1, h2, h3, h4, h5, h6, p {
                 width: 70%;
                 font-family: $scs-elight;
                 color: $white;
-                font-size: 24px;
+                font-size: 22px;
                 line-height: 36px;
             }
             a {
@@ -463,13 +476,13 @@ h1, h2, h3, h4, h5, h6, p {
                 box-shadow: $shadow;
                 transition: $s2;
                 color: $white;
-                font-size: 24px;
-                line-height: 31px;
+                font-size: 18px;
+                line-height: 24px;
                 text-align: center;
                 font-family: $scs-bold;
                 text-decoration: none;
-                margin: 0 auto;
-                margin-top: 20px;
+                margin: 50px auto;
+                
                 &:hover {
                     background: darken($lgray, 10);
                     box-shadow: $shadowHover;
@@ -529,21 +542,46 @@ h1, h2, h3, h4, h5, h6, p {
     // End Bienvenido
 }
 
-@media (max-width: 1400px) {
-    header {
-        .bajada {
-            margin-top: 20px;
-            h1 {
-                font-size: 56px;
-            }
-            p {
-                font-size: 24px;
-            }
+#TYC {
+    .contenido {
+        width: 60%;
+        margin: 30px 0px;
+        h4 {
+            font-family: $scs-regular;
+            font-size: 24px;
+            color: $black;
+            margin-bottom: 20px;
         }
-        .accesos {
-            margin: 50px 0px;
-            &Productor, &Cliente {
-                width: 250px;
+        p {
+            font-family: $scs-elight;
+            font-weight: 100;
+            font-size: 16px;
+            color: $black;
+            line-height: 28px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    #Login {
+        header {
+            .bajada {
+                margin-top: 30px;
+                h1 {
+                    font-size: 56px;
+                }
+                p {
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+            }
+            .accesos {
+                margin-top: 50px;
+                padding-bottom: 50px;
+                &Productor, &Cliente {
+                    width: 200px;
+                }
             }
         }
     }
@@ -575,6 +613,18 @@ h1, h2, h3, h4, h5, h6, p {
                 }
             }
         }
+        .features {
+            text-align: center;
+            .item {
+                &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+                    width: 300px;
+                    margin: 30px auto;
+                }
+                .icono {
+                    text-align: center;
+                }
+            }
+        }
     }
 }
 
@@ -584,37 +634,38 @@ h1, h2, h3, h4, h5, h6, p {
             font-size: 35px;
         }
     }
-    header {
-        padding-bottom: 50px;
-
-        .logos {
-            display: block;
-            img {
-                &:last-child {
-                    margin-top: 20px;
-                }
+    #Login {
+        header {
+            padding-bottom: 50px;
+            height: 100%;
+            .logos {
+                vertical-align: bottom;
             }
+            .bajada {
+                h1 {
+                    font-size: 42px;
+                }
+                p {
+                    font-size: 18px;
+                    br {
+                        display: none;
+                    }
+                }
+                .accesos {
+                    margin-top: 50px;
+                    &Cliente {
+                        margin-left: 0;
+                    }
+                    &Productor, &Cliente {
+                        width: 250px;
+                        display: block;
+                        margin: 50px auto;
+                    }
+                }
+    
+            }
+    
+            
         }
-        .bajada {
-            h1 {
-                font-size: 36px;
-            }
-            p {
-                font-size: 20px;
-            }
-            .accesos {
-                &Cliente {
-                    margin-left: 0;
-                }
-                &Productor, &Cliente {
-                    width: 250px;
-                    display: block;
-                    margin: 50px auto;
-                }
-            }
-
-        }
-
-        
     }
 }
