@@ -3,7 +3,6 @@
 @import './animations.scss';
 
 
-
 // Colores
 $white: #FFFFFF;
 $black: #1a1a1a;
@@ -30,7 +29,7 @@ h1, h2, h3, h4, h5, h6, p {
     width: 85%;
     max-width: 1000px;
     margin: 0 auto;
-    
+    //background: rgba(0, 0, 0, .1);
 }
 .col {
     width: 100%;
@@ -133,10 +132,12 @@ h1, h2, h3, h4, h5, h6, p {
     width: 100%;
     height: 100%;
     top: 0px; left: 0px;
-    background: rgba(0, 0, 0, .7);
+    //background: rgba(0, 0, 0, .7);
     z-index: 65;
     display: none;
 }
+
+// Menu Mobile
 #menuMobile {
     position: absolute;
     width: 100%;
@@ -241,67 +242,138 @@ h1, h2, h3, h4, h5, h6, p {
         }
     }
 }
-.SeccionTitulos {
-    h2 {
-        font-family: $scs-elight;
-        font-weight: 100;
-        font-size: 48px;
-        color: $pcl;
-        strong {
-            font-family: $scs-bold;
+
+// Menu Desktop
+#menuDesktop {
+    text-align: center;
+    padding: 30px 0px;
+    ul {
+        list-style-type: none;
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            a {
+                padding: 5px;
+                margin: 0px 10px;
+                //border: 1px solid white;
+                position: relative;
+                text-decoration: none;
+                font-family: $scs-elight;
+                color: $white;
+                font-size: 22px;
+                overflow: hidden;
+                svg {
+                    .cls-1 {
+                        fill: none;
+                    }
+
+                    .cls-2 {
+                        clip-path: url(#clip-path);
+                    }
+
+                    .cls-3 {
+                        fill: #fff;
+                        transition: $s2;
+                    }
+                    width: 50px;
+                    position: absolute;
+                    top: 50%; left: 50%;
+                    transform: translate(-50%, -50%); 
+                    
+                }
+                .bottomLine {
+                    position: absolute;
+                    bottom: -15px; left: 50%;
+                    transform: translateX(-50%);
+                    display: block;
+                    width: 120px;
+                    height: 2px;
+                    border-radius: 1px;
+                    background: $white;
+                    transition: $s2;
+                }
+                &:hover {
+                    svg {
+                        .cls-3 {
+                            fill: $pc;
+                        }
+                    }
+                    .bottomLine {
+                        width: 180px;
+                    }
+                }
+            }
+            .active {
+                font-family: $scs-bold;
+            }
+            &:first-child {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+.menuDesktopRojo {
+    ul {
+        li {
+            a {
+                color: $pcl !important;
+                svg {
+                    .cls-3 {
+                        fill: $pcl !important;
+                    }
+                }
+                .bottomLine {
+                    background: $pcl !important;
+                }
+            }
         }
     }
 }
 
+
 #Login {
     header {
-        width: 100%;
-        height: 100vh;
-        background: $sc;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to bottom, $pc, $sc);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to bottom, $pc, $sc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
+        text-align: center;
         .logos {
+            padding: 20px 0px;
             text-align: center;
             display: flex;
-            justify-content: end;
-            padding: 30px 0;
-            background: transparent;
-            z-index: 61;
+            justify-content: space-between;
             img {
-                width: 180px;
-                &:first-child {
-                    margin-right: auto;
-                }
+                width: 200px;
+                margin: 0px;
             }
         }
-        .bajada {
-            text-align: center;
-            margin-top: 50px;
-            h1 {
-                color: $white;
-                font-family: $scs-bold;
-                font-size: 76px;
-            }
-            p {
-                color: $white;
-                font-family: $scs-regular;
-                font-size: 28px;
-                line-height: 36px;
-                margin-top: 20px;
-            }
-    
+        h1 {
+            padding: 10px 0px;
+            font-family: $scs-bold;
+            font-weight: 700;
+            color: $white;
+            font-size: 68px;
+        }
+        h4 {
+            padding: 20px 0px;
+            font-family: $scs-regular;
+            font-weight: 400;
+            color: $white;
+            font-size: 24px;
+            line-height: 39px;
         }
         .accesos {
-            margin-top: 100px;
-            &Productor {
-                width: 300px;
+            #productores, #clientes {
+                width: 200px;
                 background: $white;
+                cursor: pointer;
                 border-radius: 10px;
                 box-shadow: $shadow;
-                transition: $s2;
-                cursor: pointer;
-    
+                transition: all .2s;
+                margin: 50px 20px;
+                &:hover {
+                    box-shadow: $shadowHover;
+                }
+            }
+
+            #productores {
                 #svgProductores {
                     position: relative;
                     &, .TEXTO, .LINEA, .MISC_x5F_1, .MISC_x5F_2, .MISC_x5F_3, .MISC_x5F_4, .MISC_x5F_5, .MISC_x5F_6, .BOCA {
@@ -330,16 +402,7 @@ h1, h2, h3, h4, h5, h6, p {
                     }
                 }
             }
-    
-            &Cliente {
-                width: 300px;
-                background: $white;
-                border-radius: 10px;
-                box-shadow: $shadow;
-                transition: $s2;
-                cursor: pointer;
-                margin-left: 50px;
-    
+            #clientes {
                 #svgClientes {
                     position: relative;
                     &, .TEXTO, .LINEA, .MISC_x5F_1, .MISC_x5F_2, .MISC_x5F_3, .MISC_x5F_4, .MISC_x5F_5, .MISC_x5F_6, .BOCA {
@@ -370,120 +433,55 @@ h1, h2, h3, h4, h5, h6, p {
                 }
             }
         }
-        .particles-js-canvas-el {
-            position: absolute;
-            top: 0;
-            z-index: 1;
-            pointer-events: none;
-        }
+    }
+
+    #particles-js {
+        width: 100%; height: 100%;
+        position: fixed;
+        top: 0; left: 0;
+        background: $pc;
+        z-index: -1;
     }
 }
-
 #Bienvenido {
     header {
-        padding: 50px 0px;
         background: $pcl;
-        nav {
-            text-align: center;
-            ul {
-                list-style-type: none;
-                li {
-                    display: inline-block;
-                    vertical-align: middle;
-                    a {
-                        padding: 5px;
-                        margin: 0px 10px;
-                        //border: 1px solid white;
-                        position: relative;
-                        text-decoration: none;
-                        font-family: $scs-elight;
-                        color: $white;
-                        font-size: 22px;
-                        overflow: hidden;
-                        svg {
-                            .cls-1 {
-                                fill: none;
-                            }
-
-                            .cls-2 {
-                                clip-path: url(#clip-path);
-                            }
-
-                            .cls-3 {
-                                fill: #fff;
-                                transition: $s2;
-                            }
-                            width: 50px;
-                            position: absolute;
-                            top: 50%; left: 50%;
-                            transform: translate(-50%, -50%); 
-                            
-                        }
-                        .bottomLine {
-                            position: absolute;
-                            bottom: -15px; left: 50%;
-                            transform: translateX(-50%);
-                            display: block;
-                            width: 120px;
-                            height: 2px;
-                            border-radius: 1px;
-                            background: $white;
-                            transition: $s2;
-                        }
-                        &:hover {
-                            svg {
-                                .cls-3 {
-                                    fill: $pc;
-                                }
-                            }
-                            .bottomLine {
-                                width: 180px;
-                            }
-                        }
-                    }
-                    .active {
-                        font-family: $scs-bold;
-                    }
-                    &:first-child {
-                        margin-right: 30px;
-                    }
-                }
-            }
-        }
         .bajada {
-            margin-top: 50px;
+            text-align: center;
             h1 {
-                svg {
-                    width: 50%;
-                    .st0{enable-background:new    ;}
-                    .st1{fill:#FFFFFF;}
-                }
+                margin: 50px 0px;
+                text-align: left;
             }
             p {
-                margin-top: 40px;
                 width: 70%;
                 font-family: $scs-elight;
+                font-weight: 100;
                 color: $white;
-                font-size: 22px;
-                line-height: 36px;
+                font-size: 20px;
+                line-height: 28px;
+                text-align: left;
+                strong {
+                    font-family: $scs-bold;
+                    font-weight: 700;
+                }
             }
             a {
-                display: block;
-                width: 500px;
-                padding: 10px 0px;
+                margin: 70px auto;
+                display: inline-block;
+                text-align: center;
+                text-decoration: none;
+                padding: 15px 80px;
                 background: $lgray;
-                border-radius: 10px;
-                box-shadow: $shadow;
-                transition: $s2;
+                font-family: $scs-bold;
+                font-weight: 700;
                 color: $white;
                 font-size: 18px;
                 line-height: 24px;
-                text-align: center;
-                font-family: $scs-bold;
-                text-decoration: none;
-                margin: 50px auto;
-                
+                border-radius: 10px;
+                transition: all .2s;
+                box-shadow: $shadow;
                 &:hover {
+                    padding: 15px 90px;
                     background: darken($lgray, 10);
                     box-shadow: $shadowHover;
                 }
@@ -538,134 +536,31 @@ h1, h2, h3, h4, h5, h6, p {
             }
         }
     }
-
-    // End Bienvenido
-}
-
-#TYC {
-    .contenido {
-        width: 60%;
-        margin: 30px 0px;
-        h4 {
-            font-family: $scs-regular;
-            font-size: 24px;
-            color: $black;
-            margin-bottom: 20px;
-        }
-        p {
-            font-family: $scs-elight;
-            font-weight: 100;
-            font-size: 16px;
-            color: $black;
-            line-height: 28px;
-            margin-bottom: 50px;
-        }
-    }
-}
-
-@media (max-width: 1400px) {
-    #Login {
-        header {
-            .bajada {
-                margin-top: 30px;
-                h1 {
-                    font-size: 56px;
-                }
-                p {
-                    font-size: 24px;
-                    line-height: 30px;
-                }
-            }
-            .accesos {
-                margin-top: 50px;
-                padding-bottom: 50px;
-                &Productor, &Cliente {
-                    width: 200px;
-                }
-            }
-        }
-    }
-}
-@media (max-width: 1000px) {
-    #menuMobileBoton {
-        display: block;
-    }
-    #Bienvenido {
-        header {
-            nav {
-                display: none;
-            }
-            .bajada {
-                h1 {
-                    svg {
-                        width: 100%;
-                    }
-                }
-                p {
-                    width: 100%;
-                    font-size: 18px;
-                    margin-bottom: 30px;
-                }
-                a {
-                    width: 100%;
-                    font-size: 18px;
-                    margin: 20px 0;
-                }
-            }
-        }
-        .features {
-            text-align: center;
-            .item {
-                &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
-                    width: 300px;
-                    margin: 30px auto;
-                }
-                .icono {
-                    text-align: center;
-                }
-            }
-        }
-    }
 }
 
 @media (max-width: 600px) {
-    .popupIngresoProductores {
-        h1 {
-            font-size: 35px;
-        }
-    }
     #Login {
         header {
-            padding-bottom: 50px;
-            height: 100%;
             .logos {
-                vertical-align: bottom;
+                img {
+                    width: 150px;
+                }
             }
-            .bajada {
-                h1 {
-                    font-size: 42px;
-                }
-                p {
-                    font-size: 18px;
-                    br {
-                        display: none;
-                    }
-                }
-                .accesos {
-                    margin-top: 50px;
-                    &Cliente {
-                        margin-left: 0;
-                    }
-                    &Productor, &Cliente {
-                        width: 250px;
-                        display: block;
-                        margin: 50px auto;
-                    }
-                }
-    
+            h1 {
+                font-size: 36px;
             }
-    
-            
+            h4 {
+                font-size: 18px;
+                line-height: 24px;
+                br {
+                    display: none;
+                }
+            }
+            .accesos {
+                #productores, #clientes {
+                    margin: 20px 0px;
+                }
+            }
         }
     }
 }
