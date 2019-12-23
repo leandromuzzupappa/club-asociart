@@ -665,6 +665,81 @@ h1, h2, h3, h4, h5, h6, p {
   border-bottom: 3px solid #A10B23;
 }
 
+#Como-canjear-premios .bajada {
+  padding: 80px 0;
+}
+
+#Como-canjear-premios .bajada h1 {
+  font-family: "scs-elight", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 41px;
+  color: #CD1931;
+  line-height: 56px;
+  margin-bottom: 20px;
+}
+
+#Como-canjear-premios .bajada h1 strong {
+  font-family: "scs-bold", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+#Como-canjear-premios .bajada p {
+  font-family: "scs-elight", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+#Como-canjear-premios .acceso .pasos .item {
+  width: calc(100% / 3 - 40px);
+  vertical-align: top;
+}
+
+#Como-canjear-premios .acceso .pasos .item .img {
+  margin-bottom: 20px;
+}
+
+#Como-canjear-premios .acceso .pasos .item .img svg {
+  width: 175px;
+  transition: all .2s;
+}
+
+#Como-canjear-premios .acceso .pasos .item .img svg .st0 {
+  fill: none;
+  stroke: #CD1931;
+  stroke-width: 0.75;
+  stroke-miterlimit: 10;
+  transition: all .2s;
+}
+
+#Como-canjear-premios .acceso .pasos .item .img svg .st1 {
+  fill: #CD1931;
+}
+
+#Como-canjear-premios .acceso .pasos .item .texto p {
+  font-family: "scs-elight", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+#Como-canjear-premios .acceso .pasos .item .texto p strong {
+  font-family: "scs-bold", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  transition: all .2s;
+}
+
+#Como-canjear-premios .acceso .pasos .item:hover .img svg .st0 {
+  fill: #CD1931;
+}
+
+#Como-canjear-premios .acceso .pasos .item:hover .texto p strong {
+  color: #CD1931;
+}
+
+#Como-canjear-premios .acceso .pasos .cta button {
+  width: 300px;
+  height: 40px;
+}
+
 @media (max-width: 600px) {
   #Login header .logos img {
     width: 150px;
