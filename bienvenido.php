@@ -1,6 +1,37 @@
 <?php include 'includes/head.php'?>
 <div id="Bienvenido">
     <header>
+        <div id="menuMobileBoton">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="menuMobile" class="">
+            <div class="logos">
+                <img src="assets/images/logo-club-asociart-blanco.svg" alt="Club Asociart">
+                <img src="assets/images/logo-asociart-blanco.svg" alt="Asociart">
+            </div>
+            <div class="item">
+                <a class="active" href="#">Inicio
+                    <div class="bottomLine"></div>
+                </a>
+            </div>
+            <div class="item">
+                <a class="" href="#">¿Cómo canjear los premios?
+                    <div class="bottomLine"></div>
+                </a>
+            </div>
+            <div class="item">
+                <a class="" href="#">¿Cómo sumar puntos?
+                    <div class="bottomLine"></div>
+                </a>
+            </div>
+            <div class="item">
+                <a class="" href="#">Bases y condiciones
+                    <div class="bottomLine"></div>
+                </a>
+            </div>
+        </div>
         <nav id="menuDesktop" class="">
             <div class="container">
                 <ul>

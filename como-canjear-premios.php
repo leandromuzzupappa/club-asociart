@@ -1,4 +1,13 @@
+<?php include 'data/cargar-premios.php';
+    function orderData($a, $b) {
+		return $a['price'] > $b['price'];
+	
+	}
+
+	usort ($premios,'orderData');
+?>
 <?php include 'includes/head.php'?>
+
 <div id="Como-canjear-premios">
     
     <header>
@@ -140,28 +149,54 @@
 
         <div class="listaDePremios">
             <div class="container">
+                <div class="premiosContainer">
+                    <!-- Maquetado del premio - single
+                    <div class="col premio">
 
-                <div class="col premio">
+                        <div class="pPrecio">
+                            <h4>
+                                99.999
+                            </h4>
+                        </div>
+                        <div class="pImagen">
+                            <img src="assets/images/premios/lapiceras.svg" alt="Lapiceras">
+                        </div>
+                        <div class="pDatos">
+                            <h4>
+                                PACK 5 BOLIGRAFOS
+                            </h4>
+                            <p>
+                                Garbarino/Fravega $200
+                            </p>
+                        </div>
 
-                    <div class="pPrecio">
-                        <h4>
-                            99.999
-                        </h4>
                     </div>
-                    <div class="pImagen">
-                        <img src="assets/images/premios/lapiceras.svg" alt="Lapiceras">
-                    </div>
-                    <div class="pDatos">
-                        <h4>
-                            PACK 5 BOLIGRAFOS
-                        </h4>
-                        <p>
-                            Garbarino/Fravega $200
-                        </p>
-                    </div>
+                    -->
+                    <?php foreach ($premios as $key => $premio):?>
+                    <div class="col premio">
 
+                        <div class="pPrecio">
+                            <h4>
+                                <?php echo number_format($premio['price'], 0, ',', '.'); ?>
+                            </h4>
+                        </div>
+                        <div class="pImagen">
+                            <img src="<?php echo $premio['img']; ?>" alt="<?php echo $premio['altImg']; ?>">
+                        </div>
+                        <div class="pDatos">
+                            <h4>
+                                <?php echo $premio['title']; ?>
+                            </h4>
+                            <?php if (isset($premio['desc'])):?>
+                                <p>
+                                    <?php echo $premio['desc']; ?>
+                                </p>
+                            <?php endif;?>
+                        </div>
+
+                    </div>
+                    <?php endforeach; ?>
                 </div>
-
             </div>
         </div>
 

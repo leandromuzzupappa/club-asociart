@@ -22,6 +22,25 @@ const loginClientes = $('#Login #clientes');
         $(document).prop('title', newTitle);
     }
 
+// Menu mobile
+    var mmbtn = $('#menuMobileBoton');
+    var mm = $('#menuMobile');
+
+    mmbtn.click(function () {
+        $(this).toggleClass('menuMobileBotonActive');
+        mm.toggleClass('menuMobileActive');
+        if ( mm.hasClass('menuMobileActive') ) {
+            html.animate({scrollTop: 0}, '20')
+            html.css('overflow', 'hidden')
+            setTimeout(() => {
+                mm.css('top', '0px') 
+            }, 30);
+        } else {
+            html.css('overflow', 'scroll')
+            mm.css('top', '-100p%') 
+        }
+    })
+
 // Login events
     // Animations
     loginProductores.hover(function () {
@@ -54,8 +73,7 @@ const loginClientes = $('#Login #clientes');
         alert(1);
     })
 
-    // Lista de productos
-
+    // Lista de productos pagination
 
 
 $(document).ready(function() {
@@ -82,6 +100,17 @@ $(document).ready(function() {
             default:
                 break;
         }
+    
+    // Lista de precios?
+        setTimeout(() => {
+            $('.premiosContainer').slick({
+                infinite: false,
+                rows: 2,
+                arrows: false,
+                dots: true,
+                slidesPerRow: 4,
+                slidesToScroll: 1,
+            });
+        }, 100);
 
 })
-

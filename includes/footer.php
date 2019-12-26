@@ -9,6 +9,10 @@
 <!--particles-->
 <script src="assets/scripts/particles.js"></script>
 
+<!--slick JS-->
+<script src="assets/scripts/slick.min.js"></script>
+
+
 <!--lennylu-->
 <script src="assets/scripts/app.js"></script>
 

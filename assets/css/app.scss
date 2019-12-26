@@ -449,7 +449,7 @@ h1, h2, h3, h4, h5, h6, p {
         .bajada {
             text-align: center;
             h1 {
-                margin: 50px 0px;
+                padding: 50px 0px;
                 text-align: left;
             }
             p {
@@ -626,9 +626,42 @@ h1, h2, h3, h4, h5, h6, p {
     .listaDePremios {
         margin: 80px 0;
         
+        .premiosContainer {
+            width: 100%;
+            overflow: hidden;
+            .slick-list {
+                overflow: all !important;
+                padding: 50px !important;
+            }
+            .slick-dots {
+                position: absolute;
+                bottom: 0; left: 50%;
+                list-style: none;
+                li {
+                    display: inline-block;
+                    margin: 0px 5px;
+                    button {
+                        font-size: 0;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+                .slick-active {
+                    button {
+                        background: $pcl;
+                    }
+                }
+
+            }
+            
+        }
         .premio {
-            width: calc(100% / 4 - 19px);
-            margin: 40px 10px;
+            width: calc(100% / 4 - 19px) !important;
+            height: 240px;
+            margin: 10px 10px;
             padding: 30px 0px;
             background: $white;
             border-radius: 10px;
@@ -647,7 +680,7 @@ h1, h2, h3, h4, h5, h6, p {
                 height: 80px;
                 display: block;
                 position: absolute;
-                top: 0px; right: 0px;
+                top: 10px; right: 10px;
                 border-radius: 50%;
                 background: rgb(211,36,36);
                 background: -moz-linear-gradient(31deg, rgba(211,36,36,1) 40%, rgba(237,95,95,1) 100%);
@@ -667,6 +700,7 @@ h1, h2, h3, h4, h5, h6, p {
             .pImagen {
                 text-align: center;
                 img {
+                    margin: 0 auto;
                     width: 180px;
                 }
             }
@@ -695,6 +729,36 @@ h1, h2, h3, h4, h5, h6, p {
     }
 }
 
+@media (max-width: 1000px) {
+    #menuMobileBoton {
+        display: block;
+    }
+    #menuDesktop {
+        display: none;
+    }
+    #Bienvenido {
+        .features {
+            text-align: center;
+            .item {
+                &:nth-child(1) {
+                    margin-left: 30px;
+                }
+                &:nth-child(4) {
+                    margin-right: 30px;
+                }
+                border: 1px solid $lgray;
+                border-radius: 10px;
+                width: 300px !important;
+                padding: 20px;
+                &:hover {
+                    border-bottom: 1px solid $lgray;
+                    box-shadow: $shadow;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 600px) {
     #Login {
         header {
@@ -717,6 +781,30 @@ h1, h2, h3, h4, h5, h6, p {
                 #productores, #clientes {
                     margin: 20px 0px;
                 }
+            }
+        }
+    }
+    #Bienvenido {
+        header {
+            .bajada {
+                h1 {
+                    img {
+                        width: 100%;
+                    }
+                }
+                p {
+                    width: 100%;
+                }
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+        .features {
+            .item {
+                width: 100% !important;
+                margin-left: 0px !important;
+                margin-right: 0px !important;
             }
         }
     }
