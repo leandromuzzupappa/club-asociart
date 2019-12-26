@@ -48,6 +48,14 @@ const loginClientes = $('#Login #clientes');
         window.location.href = 'bienvenido.php?clientes'
     });
 
+// Como canjear premios
+    // Boton Ingresar para canjear
+    $('#ingresoCanjear').click(function() {
+        alert(1);
+    })
+
+    // Lista de productos
+
 
 
 $(document).ready(function() {

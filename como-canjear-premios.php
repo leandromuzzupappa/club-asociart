@@ -131,12 +131,39 @@
                     </div>
 
                     <div class="cta">
-                        <button>Ingresá para canjear</button>
+                        <button id="ingresoCanjear">Ingresá para canjear</button>
                     </div>
 
                 </div>
             </div>
         </section>
+
+        <div class="listaDePremios">
+            <div class="container">
+
+                <div class="col premio">
+
+                    <div class="pPrecio">
+                        <h4>
+                            99.999
+                        </h4>
+                    </div>
+                    <div class="pImagen">
+                        <img src="assets/images/premios/lapiceras.svg" alt="Lapiceras">
+                    </div>
+                    <div class="pDatos">
+                        <h4>
+                            PACK 5 BOLIGRAFOS
+                        </h4>
+                        <p>
+                            Garbarino/Fravega $200
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
 
     </main>
 

@@ -735,9 +735,104 @@ h1, h2, h3, h4, h5, h6, p {
   color: #CD1931;
 }
 
+#Como-canjear-premios .acceso .pasos .cta {
+  margin-top: 50px;
+}
+
 #Como-canjear-premios .acceso .pasos .cta button {
-  width: 300px;
+  width: 366px;
   height: 40px;
+  background: #CD1931;
+  border: 0;
+  border-radius: 10px;
+  font-family: "scs-bold", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#Como-canjear-premios .acceso .pasos .cta button:hover {
+  box-shadow: 0px 10px 50px 0px rgba(205, 25, 49, 0.2);
+}
+
+#Como-canjear-premios .listaDePremios {
+  margin: 80px 0;
+}
+
+#Como-canjear-premios .listaDePremios .premio {
+  width: calc(100% / 4 - 19px);
+  margin: 40px 10px;
+  padding: 30px 0px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+#Como-canjear-premios .listaDePremios .premio:nth-child(4n-7) {
+  margin-left: 0px;
+}
+
+#Como-canjear-premios .listaDePremios .premio:nth-child(4n) {
+  margin-right: 0px;
+}
+
+#Como-canjear-premios .listaDePremios .premio .pPrecio {
+  width: 80px;
+  height: 80px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 50%;
+  background: #d32424;
+  background: -moz-linear-gradient(31deg, #d32424 40%, #ed5f5f 100%);
+  background: -webkit-linear-gradient(31deg, #d32424 40%, #ed5f5f 100%);
+  background: linear-gradient(31deg, #d32424 40%, #ed5f5f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d32424",endColorstr="#ed5f5f",GradientType=1);
+}
+
+#Como-canjear-premios .listaDePremios .premio .pPrecio h4 {
+  font-family: "scs-bold", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#Como-canjear-premios .listaDePremios .premio .pImagen {
+  text-align: center;
+}
+
+#Como-canjear-premios .listaDePremios .premio .pImagen img {
+  width: 180px;
+}
+
+#Como-canjear-premios .listaDePremios .premio .pDatos {
+  text-align: center;
+}
+
+#Como-canjear-premios .listaDePremios .premio .pDatos h4 {
+  font-family: "scs-bold", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #CD1931;
+  margin: 5px 0px;
+}
+
+#Como-canjear-premios .listaDePremios .premio .pDatos p {
+  font-family: "scs-elight", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  color: #CD1931;
+}
+
+#Como-canjear-premios .listaDePremios .premio:hover {
+  box-shadow: 0px 20px 30px 0px rgba(26, 26, 26, 0.2);
 }
 
 @media (max-width: 600px) {
