@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6, p {
 .popupIngresoProductores h1 {
   font-family: "scs-bold", Arial, Helvetica, sans-serif;
   font-size: 36px;
-  color: #CD1931;
+  color: #cd1931;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
@@ -95,9 +95,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .popupIngresoProductores input:focus {
-  border-bottom: 3px solid #CD1931;
-  color: #1a1a1a;
-  box-shadow: 0px 20px 30px 0px rgba(26, 26, 26, 0.2);
+  border-bottom: 3px solid #cd1931;
+  color: #3f3f3f;
+  box-shadow: 0px 20px 30px 0px rgba(63, 63, 63, 0.2);
 }
 
 .popupIngresoProductores p {
@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: "scs-bold", Arial, Helvetica, sans-serif;
   font-size: 18px;
   color: #FFFFFF;
-  background: #CD1931;
+  background: #cd1931;
   padding: 15px 30px;
   text-transform: uppercase;
   border: none;
@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6, p {
   width: 50px;
   right: 0;
   top: 0;
-  background: #CD1931;
+  background: #cd1931;
   transition: all 0.2s;
   cursor: pointer;
 }
@@ -222,7 +222,7 @@ h1, h2, h3, h4, h5, h6, p {
   top: 50px;
   right: 50px;
   background: #A10B23;
-  box-shadow: 0px 20px 30px 0px rgba(26, 26, 26, 0.2);
+  box-shadow: 0px 20px 30px 0px rgba(63, 63, 63, 0.2);
   border-radius: 10px;
   cursor: pointer;
   z-index: 124;
@@ -347,15 +347,15 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .menuDesktopRojo ul li a {
-  color: #CD1931 !important;
+  color: #cd1931 !important;
 }
 
 .menuDesktopRojo ul li a svg .cls-3 {
-  fill: #CD1931 !important;
+  fill: #cd1931 !important;
 }
 
 .menuDesktopRojo ul li a .bottomLine {
-  background: #CD1931 !important;
+  background: #cd1931 !important;
 }
 
 #Login header {
@@ -396,13 +396,13 @@ h1, h2, h3, h4, h5, h6, p {
   background: #FFFFFF;
   cursor: pointer;
   border-radius: 10px;
-  box-shadow: 0px 20px 30px 0px rgba(26, 26, 26, 0.2);
+  box-shadow: 0px 20px 30px 0px rgba(63, 63, 63, 0.2);
   transition: all .2s;
   margin: 50px 20px;
 }
 
 #Login header .accesos #productores:hover, #Login header .accesos #clientes:hover {
-  box-shadow: 0px 10px 10px 0px rgba(26, 26, 26, 0.4);
+  box-shadow: 0px 10px 10px 0px rgba(63, 63, 63, 0.4);
 }
 
 #Login header .accesos #productores #svgProductores {
@@ -422,7 +422,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 #Login header .accesos #productores #svgProductores .st2 {
-  fill: #1a1a1a;
+  fill: #3f3f3f;
 }
 
 #Login header .accesos #productores #svgProductores .st3 {
@@ -448,7 +448,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 #Login header .accesos #productores #svgProductores .st6 {
   fill: none;
-  stroke: #1a1a1a;
+  stroke: #3f3f3f;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -466,7 +466,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 #Login header .accesos #productores:hover {
-  box-shadow: 0px 10px 10px 0px rgba(26, 26, 26, 0.4);
+  box-shadow: 0px 10px 10px 0px rgba(63, 63, 63, 0.4);
 }
 
 #Login header .accesos #productores:hover svg .TEXTO path {
@@ -494,12 +494,12 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 #Login header .accesos #clientes #svgClientes .st3 {
-  fill: #1a1a1a;
+  fill: #3f3f3f;
 }
 
 #Login header .accesos #clientes #svgClientes .st4 {
   fill: none;
-  stroke: #1a1a1a;
+  stroke: #3f3f3f;
   stroke-width: 2.13;
   stroke-miterlimit: 10;
 }
@@ -520,7 +520,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 #Login header .accesos #clientes #svgClientes .st7 {
   fill: none;
-  stroke: #1a1a1a;
+  stroke: #3f3f3f;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -538,7 +538,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 #Login header .accesos #clientes:hover {
-  box-shadow: 0px 10px 10px 0px rgba(26, 26, 26, 0.4);
+  box-shadow: 0px 10px 10px 0px rgba(63, 63, 63, 0.4);
 }
 
 #Login header .accesos #clientes:hover svg .TEXTO path {
@@ -556,7 +556,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 #Bienvenido header {
-  background: #CD1931;
+  background: #cd1931;
 }
 
 #Bienvenido header .bajada {
@@ -597,13 +597,13 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 24px;
   border-radius: 10px;
   transition: all .2s;
-  box-shadow: 0px 20px 30px 0px rgba(26, 26, 26, 0.2);
+  box-shadow: 0px 20px 30px 0px rgba(63, 63, 63, 0.2);
 }
 
 #Bienvenido header .bajada a:hover {
   padding: 15px 90px;
   background: #777777;
-  box-shadow: 0px 10px 10px 0px rgba(26, 26, 26, 0.4);
+  box-shadow: 0px 10px 10px 0px rgba(63, 63, 63, 0.4);
 }
 
 #Bienvenido .features {
@@ -646,7 +646,7 @@ h1, h2, h3, h4, h5, h6, p {
 #Bienvenido .features .item .title {
   font-family: "scs-bold", Arial, Helvetica, sans-serif;
   font-size: 24px;
-  color: #CD1931;
+  color: #cd1931;
   margin-bottom: 15px;
 }
 
@@ -673,7 +673,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: "scs-elight", Arial, Helvetica, sans-serif;
   font-weight: 100;
   font-size: 41px;
-  color: #CD1931;
+  color: #cd1931;
   line-height: 56px;
   margin-bottom: 20px;
 }
@@ -692,6 +692,7 @@ h1, h2, h3, h4, h5, h6, p {
 #Como-canjear-premios .acceso .pasos .item {
   width: calc(100% / 3 - 40px);
   vertical-align: top;
+  margin: 0px 10px;
 }
 
 #Como-canjear-premios .acceso .pasos .item .img {
@@ -728,11 +729,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 #Como-canjear-premios .acceso .pasos .item:hover .img svg .st0 {
-  fill: #CD1931;
+  fill: #cd1931;
 }
 
 #Como-canjear-premios .acceso .pasos .item:hover .texto p strong {
-  color: #CD1931;
+  color: #cd1931;
 }
 
 #Como-canjear-premios .acceso .pasos .cta {
@@ -742,7 +743,7 @@ h1, h2, h3, h4, h5, h6, p {
 #Como-canjear-premios .acceso .pasos .cta button {
   width: 366px;
   height: 40px;
-  background: #CD1931;
+  background: #cd1931;
   border: 0;
   border-radius: 10px;
   font-family: "scs-bold", Arial, Helvetica, sans-serif;
@@ -764,6 +765,7 @@ h1, h2, h3, h4, h5, h6, p {
 #Como-canjear-premios .listaDePremios .premiosContainer {
   width: 100%;
   overflow: hidden;
+  text-align: center !important;
 }
 
 #Como-canjear-premios .listaDePremios .premiosContainer .slick-list {
@@ -775,6 +777,7 @@ h1, h2, h3, h4, h5, h6, p {
   position: absolute;
   bottom: 0;
   left: 50%;
+  transform: translateX(-50%);
   list-style: none;
 }
 
@@ -793,7 +796,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 #Como-canjear-premios .listaDePremios .premiosContainer .slick-dots .slick-active button {
-  background: #CD1931;
+  background: #cd1931;
 }
 
 #Como-canjear-premios .listaDePremios .premio {
@@ -857,7 +860,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: "scs-bold", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 15px;
-  color: #CD1931;
+  color: #cd1931;
   margin: 5px 0px;
 }
 
@@ -865,11 +868,150 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: "scs-elight", Arial, Helvetica, sans-serif;
   font-weight: 100;
   font-size: 15px;
-  color: #CD1931;
+  color: #cd1931;
 }
 
 #Como-canjear-premios .listaDePremios .premio:hover {
-  box-shadow: 0px 20px 30px 0px rgba(26, 26, 26, 0.2);
+  box-shadow: 0px 20px 30px 0px rgba(63, 63, 63, 0.2);
+}
+
+#Como-sumar-puntos .bajada {
+  padding: 80px 0;
+}
+
+#Como-sumar-puntos .bajada h1 {
+  font-family: "scs-elight", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 41px;
+  color: #cd1931;
+  line-height: 56px;
+  margin-bottom: 20px;
+}
+
+#Como-sumar-puntos .bajada h1 strong {
+  font-family: "scs-bold", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+#Como-sumar-puntos .bajada .texto {
+  width: 70%;
+}
+
+#Como-sumar-puntos .bajada .texto h6 {
+  font-family: "scs-regular", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: #3f3f3f;
+  margin-bottom: 30px;
+}
+
+#Como-sumar-puntos .bajada .texto p {
+  font-family: "scs-elight", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  color: #3f3f3f;
+  line-height: 36px;
+}
+
+#Como-sumar-puntos .bajada .texto p strong {
+  font-family: "scs-bold", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  transition: all 0.2s;
+}
+
+#Como-sumar-puntos .bajada .texto p:hover strong {
+  color: #cd1931;
+}
+
+#Como-sumar-puntos .listaDeOperaciones {
+  margin-bottom: 50px;
+}
+
+#Como-sumar-puntos .listaDeOperaciones .listaHeader {
+  margin-bottom: 20px;
+}
+
+#Como-sumar-puntos .listaDeOperaciones .listaHeader .title:nth-child(1) {
+  width: 80%;
+}
+
+#Como-sumar-puntos .listaDeOperaciones .listaHeader .title:nth-child(2) {
+  width: 20%;
+  text-align: right;
+}
+
+#Como-sumar-puntos .listaDeOperaciones .listaHeader .title h3 {
+  font-family: "scs-bold", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #3f3f3f;
+  text-transform: uppercase;
+}
+
+#Como-sumar-puntos .listaDeOperaciones .listaContent {
+  width: 100%;
+  height: 600px;
+  overflow-y: scroll;
+  border-radius: 10px;
+}
+
+#Como-sumar-puntos .listaDeOperaciones .listaContent ul {
+  list-style-type: none;
+}
+
+#Como-sumar-puntos .listaDeOperaciones .listaContent ul li {
+  padding: 10px 0px;
+  background: #f2f2f2;
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+#Como-sumar-puntos .listaDeOperaciones .listaContent ul li .operacion {
+  font-family: "scs-regular", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #cd1931;
+}
+
+#Como-sumar-puntos .listaDeOperaciones .listaContent ul li .puntos {
+  width: 100px;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  background: #d32424;
+  background: -moz-linear-gradient(50deg, #d32424 40%, #ed5f5f 100%);
+  background: -webkit-linear-gradient(50deg, #d32424 40%, #ed5f5f 100%);
+  background: linear-gradient(50deg, #d32424 40%, #ed5f5f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d32424",endColorstr="#ed5f5f",GradientType=1);
+  transition: all .2s;
+}
+
+#Como-sumar-puntos .listaDeOperaciones .listaContent ul li .puntos span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "scs-bold", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #FFFFFF;
+}
+
+#Como-sumar-puntos .listaDeOperaciones .listaContent ul li:hover {
+  background: #e5e5e5;
+}
+
+#Como-sumar-puntos .listaDeOperaciones .listaContent ul li:hover .puntos {
+  width: 200px;
+}
+
+#Como-sumar-puntos .listaDeOperaciones .listaContent ul li:hover .puntos span {
+  left: 50%;
+  right: 20px;
 }
 
 @media (max-width: 1000px) {
@@ -896,7 +1038,57 @@ h1, h2, h3, h4, h5, h6, p {
   }
   #Bienvenido .features .item:hover {
     border-bottom: 1px solid #909090;
-    box-shadow: 0px 20px 30px 0px rgba(26, 26, 26, 0.2);
+    box-shadow: 0px 20px 30px 0px rgba(63, 63, 63, 0.2);
+  }
+  #Como-canjear-premios .listaDePremios .premiosContainer .slick-list {
+    padding: 50px 0px !important;
+  }
+  #Como-canjear-premios .listaDePremios .premio {
+    width: 200px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  #Como-canjear-premios .acceso .pasos .item {
+    margin: 0px 10px !important;
+  }
+  #Como-canjear-premios .listaDePremios .premio {
+    width: calc(100% / 2 - 30px) !important;
+  }
+  #Como-sumar-puntos .bajada {
+    margin-top: 60px;
+  }
+  #Como-sumar-puntos .bajada h1 {
+    font-size: 48px;
+  }
+  #Como-sumar-puntos .bajada .texto {
+    width: 100%;
+  }
+  #Como-sumar-puntos .bajada .texto h6 {
+    font-size: 20px;
+  }
+  #Como-sumar-puntos .bajada .texto p {
+    font-size: 16px;
+  }
+  #Como-sumar-puntos .listaDeOperaciones .listaHeader .title:nth-child(1) {
+    width: 50%;
+  }
+  #Como-sumar-puntos .listaDeOperaciones .listaHeader .title:nth-child(2) {
+    width: 50%;
+    text-align: right;
+  }
+  #Como-sumar-puntos .listaDeOperaciones .listaHeader .title h3 {
+    font-size: 24px;
+  }
+  #Como-sumar-puntos .listaDeOperaciones .listaContent ul li .operacion {
+    font-size: 14px;
+    width: 70%;
+  }
+  #Como-sumar-puntos .listaDeOperaciones .listaContent ul li .puntos {
+    width: 70px;
+  }
+  #Como-sumar-puntos .listaDeOperaciones .listaContent ul li .puntos span {
+    font-size: 16px;
   }
 }
 
@@ -930,5 +1122,23 @@ h1, h2, h3, h4, h5, h6, p {
     width: 100% !important;
     margin-left: 0px !important;
     margin-right: 0px !important;
+  }
+  #Como-canjear-premios .bajada h1 {
+    font-size: 36px;
+  }
+  #Como-canjear-premios .bajada p {
+    font-size: 18px;
+  }
+  #Como-canjear-premios .acceso .pasos .item {
+    width: 100%;
+    margin: 20px 0px !important;
+  }
+  #Como-canjear-premios .acceso .pasos .cta button {
+    width: 100%;
+  }
+  #Como-canjear-premios .listaDePremios .premio {
+    width: 250px !important;
+    display: block !important;
+    margin: 20px auto !important;
   }
 }

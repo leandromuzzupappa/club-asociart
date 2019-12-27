@@ -110,6 +110,21 @@ $(document).ready(function() {
                 dots: true,
                 slidesPerRow: 4,
                 slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1000,
+                        settings: {
+                            slidesPerRow: 3,
+                            centerMode: true
+                        }
+                    },
+                    {
+                        breakpoint: 800,
+                        settings: {
+                            rows: 1,
+                        }
+                    }
+                ]
             });
         }, 100);
 

@@ -5,9 +5,9 @@
 
 // Colores
 $white: #FFFFFF;
-$black: #1a1a1a;
+$black: #3f3f3f;
 $pc: #A10B23;
-$pcl: #CD1931;
+$pcl: #cd1931;
 $sc: #EA4F5C;
 $tc: #52FFBD;
 $lgray: #909090;
@@ -563,6 +563,7 @@ h1, h2, h3, h4, h5, h6, p {
             .item {
                 width: calc(100% / 3 - 40px);
                 vertical-align: top;
+                margin: 0px 10px;
                 .img {
                     margin-bottom: 20px;
                     svg {
@@ -629,6 +630,7 @@ h1, h2, h3, h4, h5, h6, p {
         .premiosContainer {
             width: 100%;
             overflow: hidden;
+            text-align: center !important;
             .slick-list {
                 overflow: all !important;
                 padding: 50px !important;
@@ -636,6 +638,7 @@ h1, h2, h3, h4, h5, h6, p {
             .slick-dots {
                 position: absolute;
                 bottom: 0; left: 50%;
+                transform: translateX(-50%);
                 list-style: none;
                 li {
                     display: inline-block;
@@ -728,6 +731,130 @@ h1, h2, h3, h4, h5, h6, p {
         }
     }
 }
+#Como-sumar-puntos {
+    .bajada {
+        padding: 80px 0;
+        h1 {
+            font-family: $scs-elight;
+            font-weight: 100;
+            font-size: 41px;
+            color: $pcl;
+            line-height: 56px;
+            margin-bottom: 20px;
+            strong {
+                font-family: $scs-bold;
+                font-weight: 700;
+            }
+        }
+        .texto {
+            width: 70%;
+            h6 {
+                font-family: $scs-regular;
+                font-weight: 400;
+                font-size: 28px;
+                color: $black;
+                margin-bottom: 30px;
+            }
+            p {
+                font-family: $scs-elight;
+                font-weight: 100;
+                font-size: 20px;
+                color: $black;
+                line-height: 36px;
+                strong {
+                    font-family: $scs-bold;
+                    font-weight: 700;
+                    transition: $s2;
+                }
+                &:hover {
+                    strong {
+                        color: $pcl;
+                    }
+                }
+            }
+        }
+    }
+    .listaDeOperaciones {
+        margin-bottom: 50px;
+        .listaHeader {
+            margin-bottom: 20px;
+            .title {
+                &:nth-child(1) {
+                    width: 80%;
+                }
+                &:nth-child(2) {
+                    width: 20%;
+                    text-align: right;
+                }
+                h3 {
+                    font-family: $scs-bold;
+                    font-weight: 700;
+                    font-size: 30px;
+                    color: $black;
+                    text-transform: uppercase;
+                }
+            }
+            
+        }
+        .listaContent {
+            width: 100%;
+            height: 600px;
+            overflow-y: scroll;
+            border-radius: 10px;
+            ul {
+                list-style-type: none;
+                li {
+                    padding: 10px 0px;
+                    background: #f2f2f2;
+                    margin-bottom: 8px;
+                    position: relative;
+                    padding-left: 20px;
+                    cursor: pointer;
+                    .operacion {
+                        font-family: $scs-regular;
+                        font-weight: 400;
+                        font-size: 18px;
+                        color: $pcl;
+                    }
+                    .puntos {
+                        width: 100px;
+                        height: 100%;
+                        position: absolute;
+                        top: 50%; right: 0px;
+                        transform: translateY(-50%);
+                        background: rgb(211,36,36);
+                        background: -moz-linear-gradient(50deg, rgba(211,36,36,1) 40%, rgba(237,95,95,1) 100%);
+                        background: -webkit-linear-gradient(50deg, rgba(211,36,36,1) 40%, rgba(237,95,95,1) 100%);
+                        background: linear-gradient(50deg, rgba(211,36,36,1) 40%, rgba(237,95,95,1) 100%);
+                        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d32424",endColorstr="#ed5f5f",GradientType=1);
+                        transition: all .2s;
+                        span {
+                            position: absolute;
+                            top: 50%; left: 50%;
+                            transform: translate(-50%, -50%);
+                            font-family: $scs-bold;
+                            font-weight: 700;
+                            font-size: 22px;
+                            color: $white;
+                        }
+                    }
+                    &:hover {
+                        background: darken(#f2f2f2, 5);
+                        .puntos {
+                            width: 200px;
+                            span {
+                                left: 50%;
+                                right: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
 
 @media (max-width: 1000px) {
     #menuMobileBoton {
@@ -757,8 +884,84 @@ h1, h2, h3, h4, h5, h6, p {
             }
         }
     }
+    #Como-canjear-premios {
+        .listaDePremios {
+            .premiosContainer {
+                .slick-list {
+                    padding: 50px 0px !important;
+                }
+            }
+            .premio {
+                width: 200px !important;
+            }
+        }
+    }
 }
-
+@media (max-width: 800px) {
+    #Como-canjear-premios {
+        .acceso {
+            .pasos {
+                .item {
+                    margin: 0px 10px !important;
+                }
+            }
+        }
+        .listaDePremios {
+            .premio {
+                width: calc(100% / 2 - 30px) !important;
+            }
+        }
+    }
+    #Como-sumar-puntos {
+        .bajada {
+            margin-top: 60px;
+            h1 {
+                font-size: 48px;
+            }
+            .texto {
+                width: 100%;
+                h6 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+        .listaDeOperaciones {
+            .listaHeader {
+                .title {
+                    &:nth-child(1) {
+                        width: 50%;
+                    }
+                    &:nth-child(2) {
+                        width: 50%;
+                        text-align: right;
+                    }
+                    h3 {
+                        font-size: 24px;
+                    }
+                }
+            }
+            .listaContent {
+                ul {
+                    li {
+                        .operacion {
+                            font-size: 14px;
+                            width: 70%;
+                        }
+                        .puntos {
+                            width: 70px;
+                            span {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media (max-width: 600px) {
     #Login {
         header {
@@ -805,6 +1008,37 @@ h1, h2, h3, h4, h5, h6, p {
                 width: 100% !important;
                 margin-left: 0px !important;
                 margin-right: 0px !important;
+            }
+        }
+    }
+    #Como-canjear-premios {
+        .bajada {
+            h1 {
+                font-size: 36px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+        .acceso {
+            .pasos {
+                .item {
+                    width: 100%;
+                    margin: 20px 0px !important;
+                }
+                .cta {
+                    button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .listaDePremios {
+            .premio {
+                width: 250px !important;
+                display: block !important;
+                margin: 20px auto !important;
             }
         }
     }
