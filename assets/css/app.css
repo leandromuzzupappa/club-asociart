@@ -805,7 +805,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 #Como-canjear-premios .listaDePremios .premio {
   width: calc(100% / 4 - 19px) !important;
-  height: 240px;
+  height: auto;
   margin: 10px 10px;
   padding: 30px 0px;
   background: #FFFFFF;

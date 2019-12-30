@@ -28,7 +28,7 @@
         ),
         array (
             'price' => 635,
-            'img' => $url.'voucher.svg',
+            'img' => $url.'bigbox.svg',
             'altImg' => 'Voucher',
             'title' => 'Voucher',
             'desc' => 'Big Box Bonjour'
@@ -48,14 +48,14 @@
         ),
         array (
             'price' => 8000,
-            'img' => $url.'voucher.svg',
+            'img' => $url.'bigbox.svg',
             'altImg' => 'Voucher',
             'title' => 'Voucher',
             'desc' => 'Big Box Beer & Burger'
         ),
         array (
             'price' => 1000,
-            'img' => $url.'voucher.svg',
+            'img' => $url.'examenPreocupacional.svg',
             'altImg' => 'Voucher',
             'title' => 'Voucher',
             'desc' => 'Examen Preocupacional Básico'
@@ -76,76 +76,76 @@
         ),
         array (
             'price' => 4000,
-            'img' => $url.'voucher.svg',
+            'img' => $url.'medicionPuestaTierra.svg',
             'altImg' => 'Voucher',
             'title' => 'Voucher',
             'desc' => 'Medición Puesta a Tierra (PAT)'
         ),
         array (
             'price' => 4000,
-            'img' => $url.'voucher.svg',
+            'img' => $url.'medicionIluminacion.svg',
             'altImg' => 'Voucher',
             'title' => 'Voucher',
             'desc' => 'Medición de Iluminación'
         ),
         array (
             'price' => 4000,
-            'img' => $url.'voucher.svg',
+            'img' => $url.'estudioErgonomia.svg',
             'altImg' => 'Voucher',
             'title' => 'Voucher',
             'desc' => 'Estudio de Ergonomía'
         ),
         array (
             'price' => 4000,
-            'img' => $url.'voucher.svg',
+            'img' => $url.'medicionSonora.svg',
             'altImg' => 'Voucher',
             'title' => 'Voucher',
             'desc' => 'Medición Sonora'
         ),
         array (
             'price' => 4000,
-            'img' => $url.'voucher.svg',
+            'img' => $url.'medicionCargaFuego.svg',
             'altImg' => 'Voucher',
             'title' => 'Voucher',
             'desc' => 'Medición Carga de Fuego'
         ),
         array (
             'price' => 5000,
-            'img' => $url.'voucher.svg',
+            'img' => $url.'bigbox.svg',
             'altImg' => 'Voucher',
             'title' => 'Voucher',
             'desc' => 'Big Box Sabores del Mundo'
         ),
         array (
             'price' => 9000,
-            'img' => $url.'voucher.svg',
+            'img' => $url.'bigbox.svg',
             'altImg' => 'Voucher',
             'title' => 'Voucher',
             'desc' => 'Big Box Acción'
         ),
         array (
             'price' => 10000,
-            'img' => $url.'voucher.svg',
+            'img' => $url.'bigbox.svg',
             'altImg' => 'Voucher',
             'title' => 'Experiencia de Bienestar',
             'desc' => 'Box Relax'
         ),
         array (
             'price' => 10000,
-            'img' => $url.'voucher.svg',
+            'img' => $url.'capacitacionUtn.svg',
             'altImg' => 'Voucher',
             'title' => 'Capacitación UTN',
         ),
         array (
             'price' => 12000,
-            'img' => $url.'voucher.svg',
+            'img' => $url.'bigbox.svg',
             'altImg' => 'Voucher',
             'title' => 'Voucher',
             'desc' => 'Big Box Boutique'
         ),
         array (
             'price' => 15000,
-            'img' => $url.'voucher.svg',
+            'img' => $url.'bigbox.svg',
             'altImg' => 'Voucher',
             'title' => 'Voucher',
             'desc' => 'Big Box Weekend'
