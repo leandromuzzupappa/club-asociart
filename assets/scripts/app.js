@@ -10,6 +10,7 @@ const loginClientes = $('#Login #clientes');
             return thisPage.replace('/clubasociart/web/', '');
         }
         if ( thisPage.indexOf('/devel/') > -1 ) {
+
             return thisPage.replace('/devel/', '');
         }
         
@@ -81,6 +82,11 @@ $(document).ready(function() {
     // Set title acording to the page
         switch (currentPage) {
             case 'login.php':
+                setTitleTag('Iniciar Sesión - Club Asociart');
+                // Particles Js
+                particlesJS.load('particles-js', 'assets/scripts/particlesjs-config.json');
+                break;
+            case '':
                 setTitleTag('Iniciar Sesión - Club Asociart');
                 // Particles Js
                 particlesJS.load('particles-js', 'assets/scripts/particlesjs-config.json');

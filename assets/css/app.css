@@ -25,6 +25,10 @@
   font-family: "scs-regular", Arial, Helvetica, sans-serif;
 }
 
+*:focus {
+  outline: none !important;
+}
+
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
@@ -1014,6 +1018,91 @@ h1, h2, h3, h4, h5, h6, p {
   right: 20px;
 }
 
+#Tyc header .bajada {
+  margin: 50px 0px;
+  width: 80%;
+}
+
+#Tyc header .bajada h1 {
+  font-family: "scs-elight", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 41px;
+  color: #cd1931;
+  line-height: 56px;
+  margin-bottom: 40px;
+}
+
+#Tyc header .bajada h1 strong {
+  font-family: "scs-bold", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+#Tyc header .bajada .texto h4 {
+  font-family: "scs-regular", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #3f3f3f;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+#Tyc header .bajada .texto p {
+  font-family: "scs-elight", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 30px;
+  color: #3f3f3f;
+  text-align: justify;
+}
+
+#Tyc main .tycTitle {
+  font-family: "scs-regular", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #3f3f3f;
+  margin-bottom: 20px;
+  text-align: justify;
+  width: 80%;
+}
+
+#Tyc main .tycText {
+  font-family: "scs-elight", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 30px;
+  color: #3f3f3f;
+  margin-bottom: 30px;
+  text-align: justify;
+  width: 80%;
+}
+
+#Tyc main .tycText a {
+  text-decoration: none;
+  color: #3f3f3f;
+  font-family: "scs-elight", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+#Tyc footer {
+  padding: 50px 0px;
+  background: #3f3f3f;
+  text-align: center;
+}
+
+#Tyc footer p {
+  font-family: "scs-elight", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  color: #FFFFFF;
+  line-height: 30px;
+}
+
+#Tyc footer p a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
 @media (max-width: 1000px) {
   #menuMobileBoton {
     display: block;
@@ -1088,6 +1177,29 @@ h1, h2, h3, h4, h5, h6, p {
     width: 70px;
   }
   #Como-sumar-puntos .listaDeOperaciones .listaContent ul li .puntos span {
+    font-size: 16px;
+  }
+  #Tyc header .bajada {
+    width: 100%;
+  }
+  #Tyc header .bajada h1 {
+    font-size: 36px;
+  }
+  #Tyc header .bajada .texto h4 {
+    font-size: 24px;
+  }
+  #Tyc header .bajada .texto p {
+    font-size: 16px;
+  }
+  #Tyc main .tycTitle {
+    font-size: 18px;
+    width: 100%;
+  }
+  #Tyc main .tycText {
+    font-size: 16px;
+    width: 100%;
+  }
+  #Tyc footer p {
     font-size: 16px;
   }
 }

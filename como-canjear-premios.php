@@ -22,12 +22,12 @@
                 <img src="assets/images/logo-asociart-blanco.svg" alt="Asociart">
             </div>
             <div class="item">
-                <a class="active" href="bienvenido.php">Inicio
+                <a class="" href="bienvenido.php">Inicio
                     <div class="bottomLine"></div>
                 </a>
             </div>
             <div class="item">
-                <a class="" href="como-canjear-premios.php">¿Cómo canjear los premios?
+                <a class="active" href="como-canjear-premios.php">¿Cómo canjear los premios?
                     <div class="bottomLine"></div>
                 </a>
             </div>

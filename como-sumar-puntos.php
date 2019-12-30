@@ -19,7 +19,7 @@
                 <img src="assets/images/logo-asociart-blanco.svg" alt="Asociart">
             </div>
             <div class="item">
-                <a class="active" href="bienvenido.php">Inicio
+                <a class="" href="bienvenido.php">Inicio
                     <div class="bottomLine"></div>
                 </a>
             </div>
@@ -29,7 +29,7 @@
                 </a>
             </div>
             <div class="item">
-                <a class="" href="como-sumar-puntos.php">¿Cómo sumar puntos?
+                <a class="active" href="como-sumar-puntos.php">¿Cómo sumar puntos?
                     <div class="bottomLine"></div>
                 </a>
             </div>
@@ -59,13 +59,13 @@
                         </a>
                     </li>
                     <li>
-                        <a class="active" href="como-canjear-premios.php">
+                        <a class="" href="como-canjear-premios.php">
                             ¿Cómo canjear los premios?
                             <div class="bottomLine"></div>
                         </a>
                     </li>
                     <li>
-                        <a class="" href="como-sumar-puntos.php">
+                        <a class="active" href="como-sumar-puntos.php">
                             ¿Cómo sumar puntos?
                             <div class="bottomLine"></div>
                         </a>
