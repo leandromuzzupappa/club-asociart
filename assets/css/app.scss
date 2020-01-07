@@ -131,13 +131,29 @@ h1, h2, h3, h4, h5, h6, p {
     }
 }
 .overlay {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     top: 0px; left: 0px;
-    //background: rgba(0, 0, 0, .7);
+    background: transparentize(darken($black, 50), .06);
     z-index: 65;
-    display: none;
+    .images {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        img {
+            width: 300px;
+            border: 0;
+            display: block;
+            margin-bottom: 20px;
+        }
+        #loader {
+            width: 50px;
+            display: inline-block;
+            text-align: center;
+        }
+    }
 }
 
 // Menu Mobile
@@ -636,11 +652,11 @@ h1, h2, h3, h4, h5, h6, p {
             text-align: center !important;
             .slick-list {
                 overflow: all !important;
-                padding: 50px !important;
+                padding-bottom: 50px !important;
             }
             .slick-dots {
                 position: absolute;
-                bottom: 0; left: 50%;
+                bottom: 0px; left: 50%;
                 transform: translateX(-50%);
                 list-style: none;
                 li {
@@ -653,6 +669,7 @@ h1, h2, h3, h4, h5, h6, p {
                         border-radius: 50%;
                         border: none;
                         cursor: pointer;
+                        background: $lgray;
                     }
                 }
                 .slick-active {
@@ -666,12 +683,13 @@ h1, h2, h3, h4, h5, h6, p {
         }
         .premio {
             width: calc(100% / 4 - 19px) !important;
-            height: auto;
+            height: 300px;
             margin: 10px 10px;
             padding: 30px 0px;
             background: $white;
             border-radius: 10px;
             transition: $s2;
+            border: 1px solid lighten($lgray, 30);
             // Traigo todos los elementos de la izqueirda y les saco el margin left
             &:nth-child(4n-7) {
                 margin-left: 0px;
@@ -693,6 +711,7 @@ h1, h2, h3, h4, h5, h6, p {
                 background: -webkit-linear-gradient(31deg, rgba(211,36,36,1) 40%, rgba(237,95,95,1) 100%);
                 background: linear-gradient(31deg, rgba(211,36,36,1) 40%, rgba(237,95,95,1) 100%);
                 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d32424",endColorstr="#ed5f5f",GradientType=1);
+                z-index: 20;
                 h4 {
                     font-family: $scs-bold;
                     font-weight: 700;
@@ -708,6 +727,7 @@ h1, h2, h3, h4, h5, h6, p {
                 img {
                     margin: 0 auto;
                     width: 180px;
+                    transition: $s2;
                 }
             }
             .pDatos {
@@ -728,7 +748,12 @@ h1, h2, h3, h4, h5, h6, p {
             }
 
             &:hover {
-                box-shadow: $shadow;
+                border: 1px solid $lgray;
+                .pImagen {
+                    img {
+                        transform: scale(1.2);
+                    }
+                }
             }
 
         }
@@ -737,10 +762,11 @@ h1, h2, h3, h4, h5, h6, p {
 #Como-sumar-puntos {
     .bajada {
         padding: 80px 0;
+        width: 49%;
         h1 {
             font-family: $scs-elight;
             font-weight: 100;
-            font-size: 41px;
+            font-size: 38px;
             color: $pcl;
             line-height: 56px;
             margin-bottom: 20px;
@@ -750,18 +776,17 @@ h1, h2, h3, h4, h5, h6, p {
             }
         }
         .texto {
-            width: 70%;
             h6 {
                 font-family: $scs-regular;
                 font-weight: 400;
-                font-size: 28px;
+                font-size: 24px;
                 color: $black;
                 margin-bottom: 30px;
             }
             p {
                 font-family: $scs-elight;
                 font-weight: 100;
-                font-size: 20px;
+                font-size: 18px;
                 color: $black;
                 line-height: 36px;
                 strong {
@@ -778,7 +803,89 @@ h1, h2, h3, h4, h5, h6, p {
         }
     }
     .listaDeOperaciones {
+        width: 50%;
+        padding: 80px 0px;
+        .listaHeader {
+            padding: 10px;
+            width: 100%;
+            .title {
+                &:nth-child(1) {
+                    width: 80%;
+                }
+                &:nth-child(2) {
+                    width: 20%;
+                    text-align: right;
+                }
+                h3 {
+                    font-family: $scs-bold;
+                    font-weight: 700;
+                    font-size: 24px;
+                    color: $black;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .listaContent {
+            width: 100%;
+            height: 380px;
+            overflow-y: scroll;
+            border-radius: 10px;
+            ul {
+                list-style-type: none;
+                li {
+                    padding: 10px 0px;
+                    background: #f2f2f2;
+                    margin-bottom: 8px;
+                    position: relative;
+                    padding-left: 20px;
+                    cursor: pointer;
+                    .operacion {
+                        font-family: $scs-regular;
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: $pcl;
+                    }
+                    .puntos {
+                        width: 70px;
+                        height: 100%;
+                        position: absolute;
+                        top: 50%; right: 0px;
+                        transform: translateY(-50%);
+                        background: rgb(211,36,36);
+                        background: -moz-linear-gradient(50deg, rgba(211,36,36,1) 40%, rgba(237,95,95,1) 100%);
+                        background: -webkit-linear-gradient(50deg, rgba(211,36,36,1) 40%, rgba(237,95,95,1) 100%);
+                        background: linear-gradient(50deg, rgba(211,36,36,1) 40%, rgba(237,95,95,1) 100%);
+                        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d32424",endColorstr="#ed5f5f",GradientType=1);
+                        transition: all .2s;
+                        span {
+                            position: absolute;
+                            top: 50%; left: 50%;
+                            transform: translate(-50%, -50%);
+                            font-family: $scs-bold;
+                            font-weight: 700;
+                            font-size: 18px;
+                            color: $white;
+                        }
+                    }
+                    &:hover {
+                        background: darken(#f2f2f2, 5);
+                        .puntos {
+                            width: 100px;
+                            span {
+                                left: 50%;
+                                right: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    #listaDeOperaciones {
         margin-bottom: 50px;
+        display: none;
         .listaHeader {
             margin-bottom: 20px;
             .title {
@@ -979,6 +1086,17 @@ h1, h2, h3, h4, h5, h6, p {
             .premio {
                 width: 200px !important;
             }
+        }
+    }
+    #Como-sumar-puntos {
+        .bajada {
+            width: 100%;
+        }
+        .listaDeOperaciones {
+            display: none;
+        }
+        #listaDeOperaciones {
+            display: block;
         }
     }
 }

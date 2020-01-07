@@ -1,6 +1,17 @@
 const html = $('html');
+const overlay = $('.overlay');
 const loginProductores = $('#Login #productores');
 const loginClientes = $('#Login #clientes');
+
+// Animacion de carga
+    function loader () {
+        html.css('overflow', 'hidden');
+        
+        setTimeout(() => {
+            html.css('overflow', 'auto');
+            overlay.fadeOut('slow');
+        }, 1000);
+    }
 
 // Check current page
     function checkPage () {
@@ -134,4 +145,6 @@ $(document).ready(function() {
             });
         }, 100);
 
+    // Animacion de carga
+        loader();
 })

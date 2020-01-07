@@ -81,7 +81,7 @@
         </nav>
 
         <div class="container">
-            <div class="bajada">
+            <div class="col bajada">
                 <h1>
                     <strong>¿Cómo sumar</strong> puntos?
                 </h1>
@@ -90,17 +90,63 @@
                         ¡Sumar puntos es muy fácil!
                     </h6>
                     <p>
-                        Cuanto más usas Asociart Online y ASDirect, <strong>más puntos acumulás y más rápido podés canjear</strong>. <br><br>
+                        Cuanto más usas Asociart Online y ASDirect, <strong>más puntos acumulás y más rápido podés canjear</strong>. <br>
                         Consultá a continuación las acciones que suman puntos, sus puntos correspondientes y sumá beneficios para tu empresa.
                     </p>
                 </div>
+            </div><!--
+            --><div class="col listaDeOperaciones">
+
+                <div class="listaHeader">
+                    <div class="col title">
+                        <h3>
+                            Operaciones
+                        </h3>
+                    </div><!--
+                    --><div class="col title">
+                        <h3>
+                            Puntos
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="listaContent">
+                    <ul>
+                        <!--
+                        <li>
+                            <p class="operacion">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque 
+                            </p>
+                            <p class="puntos">
+                                <span>
+                                    99999
+                                </span>
+                            </p>
+                        </li>
+                        -->
+                        <?php foreach ($operaciones as $key => $operacion):?>
+                            <li>
+                                <p class="operacion">
+                                    <?php echo $operacion['operacion']?>
+                                </p>
+                                <p class="puntos">
+                                    <span>
+                                        <?php echo number_format($operacion['cantidadPuntos'], 0, ',', '.'); ?>
+                                    </span>
+                                </p>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+                
+
             </div>
         </div>
 
     </header>
 
     <main>
-        <section class="listaDeOperaciones">
+        <section id="listaDeOperaciones">
             <div class="container">
 
                 <div class="listaHeader">

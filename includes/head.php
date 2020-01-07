@@ -10,3 +10,12 @@
     <link rel="stylesheet" href="assets/css/app.min.css">
 </head>
 <body>
+
+<div class="overlay">
+    <div class="container">
+        <div class="images">
+            <img src="assets/images/logo-asociart-blanco.svg" alt="Asociart">
+            <img id="loader" src="assets/images/loader.svg" alt="loader">
+        </div>
+    </div>
+</div>
